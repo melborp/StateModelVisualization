@@ -1,0 +1,37 @@
+﻿ /*---------------------------------------------------------------------
+ // <copyright file="app.css">
+ //    This code is licensed under the MIT License.
+ //    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF 
+ //    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
+ //    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+ //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ // </copyright>
+ // <summary>
+ //   Part of the State Model Visualization VSO extension by the
+ //     ALM Rangers.  This file defines CSS styling for the application.
+ //  </summary>
+ //---------------------------------------------------------------------*/
+
+.icon-zoom-100 {
+    background: url("../images/Refresh.png") no-repeat !important;
+}
+
+.icon-zoom-out {
+    background: url("../images/Zoom_ZoomOut.png") no-repeat !important;
+}
+
+.icon-zoom-in {
+    background: url("../images/Zoom_ZoomIn.png") no-repeat !important;
+}
+
+.icon-fit-to {
+    background: url("../images/FitTo.png") no-repeat !important;
+}
+
+#cy {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100px;
+}
