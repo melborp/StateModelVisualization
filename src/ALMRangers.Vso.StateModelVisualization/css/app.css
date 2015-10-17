@@ -13,23 +13,23 @@
  //---------------------------------------------------------------------*/
 
 .icon-zoom-100 {
-    background: url("../images/Refresh.png") no-repeat !important;
+    background-image: url("/images/Refresh.png") !important;
 }
 
 .icon-zoom-out {
-    background: url("../images/Zoom_ZoomOut.png") no-repeat !important;
+    background-image: url("/images/Zoom_ZoomOut.png") !important;
 }
 
 .icon-zoom-in {
-    background: url("../images/Zoom_ZoomIn.png") no-repeat !important;
+    background-image: url("/images/Zoom_ZoomIn.png") !important;
 }
 
 .icon-fit-to {
-    background: url("../images/FitTo.png") no-repeat !important;
+    background-image: url("/images/FitTo.png") !important;
 }
 
 .icon-export {
-    background: url("../images/Export.png") no-repeat !important;
+    background-image: url("/images/Export.png") !important;
 }
 
 #cy {

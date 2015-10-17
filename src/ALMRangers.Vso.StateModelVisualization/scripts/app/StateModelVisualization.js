@@ -22,12 +22,11 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
         var graph;
         var mainMenu;
 
-        function StateModelVisualization(container) {
-            this.container = container;
-            this.cy = null;
+        function StateModelVisualization() {
         }
 
         StateModelVisualization.prototype.start = function() {
+            var self = this;
             var context = VSS.getWebContext();
 
             mainMenu = Controls.Enhancement.enhance(MainMenu.ItemsView, $(".hub-view"), {});
@@ -70,11 +69,11 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
                 graph.create(wits[0].name, data);
                 treeView.TreeNode = treeViewOptions.nodes[0];
                 mainMenu.EnableToolbar();
+                $(window).on("resize", graph.resize);
             });
-
-            $(window).on("resize", graph.resize);
         }
-    });
+        return StateModelVisualization;
+    })();
 
     exports.smv = new StateModelVisualization();
 });

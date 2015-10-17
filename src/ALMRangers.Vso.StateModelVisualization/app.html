@@ -22,7 +22,6 @@
     <link href="css/app.css" rel="stylesheet" />
     <script src="sdk/scripts/VSS.SDK.js"></script>
     <script src="scripts/Cytoscape/cytoscape.min.js"></script>
-
 </head>
 <body>
     <div class="hub-view explorer">
@@ -58,6 +57,7 @@
     // Initialize the VSS sdk
     VSS.init({
         setupModuleLoader: true,
+        explicitNotifyLoaded: true,
         moduleLoaderConfig: {
             paths: {
                 "Scripts/App": "scripts/app/"
@@ -68,6 +68,7 @@
     VSS.ready(function () {
         VSS.require(["Scripts/App/StateModelVisualization"], function (app) {
             app.smv.start();
+            VSS.notifyLoadSucceeded();
         });
     });
 </script>

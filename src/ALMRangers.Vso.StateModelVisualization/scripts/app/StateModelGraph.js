@@ -18,17 +18,19 @@ define(["require", "exports"], function (require, exports) {
         var zoomStepSize = 0.1;
         var zoom100 = 2.5;
 
-        function StateModelGraph(container) {
+        function StateModelGraph(container, cytoscape) {
             this.container = container;
             this.cy = null;
             this.currentWitType = "";
+            this.cytoscape = cytoscape;
         }
 
         StateModelGraph.prototype.create = function(witTypeName, data) {
             var self = this;
             self.currentWitType = witTypeName;
-            this.container.cytoscape({
-                style: cytoscape.stylesheet()
+            self.cytoscape({
+                container : self.container[0],
+                style: self.cytoscape.stylesheet()
                     .selector('node')
                     .css({
                         'content': 'data(name)',
@@ -219,5 +221,5 @@ define(["require", "exports"], function (require, exports) {
         
         return StateModelGraph;
     })();
-    exports.graph = new StateModelGraph($("#cy"));
+    exports.graph = new StateModelGraph($("#cy"), cytoscape);
 });
