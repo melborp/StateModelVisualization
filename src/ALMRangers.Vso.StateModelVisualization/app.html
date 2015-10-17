@@ -9,8 +9,7 @@
  // </copyright>
  // <summary>
  //   Part of the State Model Visualization VSO extension by the
- //     ALM Rangers.  This file displays the main view of requirements
- //     and allows for import/export.
+ //     ALM Rangers.  This file displays the main view of State Model Visualization.
  //  </summary>
  //---------------------------------------------------------------------
 -->
@@ -23,7 +22,6 @@
     <link href="css/app.css" rel="stylesheet" />
     <script src="sdk/scripts/VSS.SDK.js"></script>
     <script src="scripts/Cytoscape/cytoscape.min.js"></script>
-    <script src="scripts/app/StateModelGraph.js"></script>
 
 </head>
 <body>
@@ -48,20 +46,6 @@
                     <div class="pivot-hub-content">
                         <div class="main-content">
                             <div class="toolbar hub-pivot-toolbar">
-                                <!--<ul class="menu-bar">
-                                    <li title="Zoom In" class="menu-item icon-only disabled" id="ZoomIn">
-                                        <span class="icon icon-zoom-in"></span>
-                                    </li>
-                                    <li title="Zoom Out" class="menu-item icon-only disabled" id="ZoomOut">
-                                        <span class="icon icon-zoom-out"></span>
-                                    </li>-->
-                                    <!--<li title="Zoom to 100%" class="menu-item icon-only disabled" id="Zoom100">
-                                        <span class="icon icon-zoom-100"></span>
-                                    </li>-->
-                                    <!--<li title="Fit to Window" class="menu-item icon-only disabled" id="FitTo">
-                                        <span class="icon icon-fit-to"></span>
-                                    </li>
-                                </ul>-->
                             </div>
                             <div id="cy"></div>
                         </div>
@@ -71,65 +55,21 @@
         </div>
     </div>
 <script type="text/javascript">
-
-    var treeView;
-    var allWits;
-
+    // Initialize the VSS sdk
     VSS.init({
-        // Our extension will explicitly notify the host when we're done loading
-        explicitNotifyLoaded: true,
-
-        // We are using some VSO APIs, so we will need the module loader to load them in
-        usePlatformScripts: true,
-        usePlatformStyles: true
+        setupModuleLoader: true,
+        moduleLoaderConfig: {
+            paths: {
+                "Scripts/App": "scripts/app/"
+            }
+        }
     });
-    VSS.require(
-        ["VSS/Controls", "VSS/Controls/TreeView", "VSS/Controls/Common", "VSS/Service", "TFS/WorkItemTracking/RestClient"],
-        function(Controls, TreeView, ControlsCommon, VSS_Service, TFS_Wit_WebApi) {
-
-            // Notify the parent frame that the host has been loaded
-            VSS.notifyLoadSucceeded();
-
-            var context = VSS.getWebContext();
-
-            // Get a WIT client to make REST calls to VSO 
-            var witClient = VSS_Service.getCollectionClient(TFS_Wit_WebApi.WorkItemTrackingHttpClient);
-
-            witClient.getWorkItemTypes(context.project.name).then(function(wits) {
-                allWits = wits;
-
-                var container = $(".work-item-type-tree-container");
-
-                function convertToTreeNodes(items) {
-                    return $.map(items, function(item) {
-                        var node = new TreeView.TreeNode(item.name);
-                        node.expanded = true;
-                        if (item.children && item.children.length > 0) {
-                            node.addRange(convertToTreeNodes(item.children));
-                        }
-                        return node;
-                    });
-                }
-
-                var treeViewOptions = { nodes: convertToTreeNodes(wits) };
-                treeView = Controls.create(TreeView.TreeView, container, treeViewOptions);
-
-                // Attach selectionchanged event using a DOM element containing treeview
-                container.bind("selectionchanged", function(e, args) {
-                    treeView.TreeNode = args.selectedNode;
-                    var selectedNode = args.selectedNode;
-                    if (selectedNode) {
-                        var data = prepareVisualization(selectedNode.text, allWits);
-                        showGraph(data);
-                    }
-                });
-
-                //show first WIT as default
-                var data = prepareVisualization(wits[0].name, allWits);
-                showGraph(data);
-                treeView.TreeNode = treeViewOptions.nodes[0];
-            });
+    // Wait for the SDK to be initialized
+    VSS.ready(function () {
+        VSS.require(["Scripts/App/StateModelVisualization"], function (app) {
+            app.smv.start();
         });
+    });
 </script>
 
 

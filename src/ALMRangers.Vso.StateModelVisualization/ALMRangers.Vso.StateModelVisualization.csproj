@@ -79,6 +79,7 @@
   <ItemGroup>
     <Content Include="css\app.css" />
     <Content Include="app.html" />
+    <Content Include="scripts\app\StateModelVisualization.js" />
     <Content Include="scripts\app\MainMenu.js" />
     <Content Include="scripts\Cytoscape\cytoscape.js" />
     <Content Include="scripts\Cytoscape\cytoscape.min.js" />

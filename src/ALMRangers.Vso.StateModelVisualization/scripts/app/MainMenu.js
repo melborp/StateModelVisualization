@@ -12,11 +12,16 @@
 //  </summary>
 //---------------------------------------------------------------------*/
 
-var __extends = this.__extends || function (d, b) {
+//var __extends = this.__extends || function (d, b) {
+//    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+//    function __() { this.constructor = d; }
+//    __.prototype = b.prototype;
+//    d.prototype = new __();
+//};
+var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }
-    __.prototype = b.prototype;
-    d.prototype = new __();
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 
 define(["require", "exports", "VSS/Utils/Core", "VSS/Host",
@@ -134,17 +139,14 @@ define(["require", "exports", "VSS/Utils/Core", "VSS/Host",
 
         ItemsView.prototype._exportGraph = function () {
             var d = new Date();
-            var witType = "";
-            var witId = "";
             var png = this._graph.exportImage();
-            //TODO: TreeView.TreeNode ...
             var newImage = $("<img />").attr("src", png);
             var imageDiv = $("<div />"); 
             imageDiv.append(newImage);
             var newWindow = window.open();
             var newDocument = newWindow.document;
             newDocument.write("<html><head><title>State Model Visualization Output</title></head><body>");
-            newDocument.write("<div style='font-family: Segoe UI Light; font-size: 18px; font-weight: 100; height: 24px'>Visualization of " + witType + " " + witId + "</div>");
+            newDocument.write("<div style='font-family: Segoe UI Light; font-size: 18px; font-weight: 100; height: 24px'>Visualization of " + this._graph.currentWitType + "</div>");
             newDocument.write("<div style='font-family: Segoe UI Light; font-size: 12px; font-weight: 100; padding-bottom: 5px'>Generated " + d.toLocaleDateString() + "</div>");
             newDocument.write($("<div />").append(imageDiv).html());
             newDocument.write("</body></html>");

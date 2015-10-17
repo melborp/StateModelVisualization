@@ -1,5 +1,5 @@
 ﻿/*---------------------------------------------------------------------
-// <copyright file="app.css">
+// <copyright file="StateModelGraph.js">
 //    This code is licensed under the MIT License.
 //    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF 
 //    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
@@ -12,7 +12,7 @@
  //  </summary>
 //---------------------------------------------------------------------*/
 
-define(["require", "exports", "Scripts/App/cy/MainMenu"], function (require, exports) {
+define(["require", "exports"], function (require, exports) {
     var StateModelGraph = (function() {
 
         var zoomStepSize = 0.1;
@@ -21,10 +21,12 @@ define(["require", "exports", "Scripts/App/cy/MainMenu"], function (require, exp
         function StateModelGraph(container) {
             this.container = container;
             this.cy = null;
+            this.currentWitType = "";
         }
 
-        StateModelGraph.prototype.create = function(data) {
+        StateModelGraph.prototype.create = function(witTypeName, data) {
             var self = this;
+            self.currentWitType = witTypeName;
             this.container.cytoscape({
                 style: cytoscape.stylesheet()
                     .selector('node')
@@ -115,6 +117,8 @@ define(["require", "exports", "Scripts/App/cy/MainMenu"], function (require, exp
         }
         StateModelGraph.prototype.resize = function () {
             var self = this;
+            if (self.cy == null)
+                return;
             self.cy.resize();
         }
 
