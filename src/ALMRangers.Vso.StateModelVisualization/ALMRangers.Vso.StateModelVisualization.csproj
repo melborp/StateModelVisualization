@@ -79,11 +79,11 @@
   <ItemGroup>
     <Content Include="css\app.css" />
     <Content Include="app.html" />
+    <Content Include="scripts\app\MainMenu.js" />
     <Content Include="scripts\Cytoscape\cytoscape.js" />
     <Content Include="scripts\Cytoscape\cytoscape.min.js" />
     <Content Include="scripts\Cytoscape\LGPL-LICENSE.txt" />
     <Content Include="scripts\app\StateModelGraph.js" />
-    <Content Include="scripts\app\StateModelVisualization.js" />
     <Content Include="sdk\scripts\VSS.SDK.js" />
     <Content Include="Web.config" />
   </ItemGroup>

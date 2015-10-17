@@ -28,6 +28,10 @@
     background: url("../images/FitTo.png") no-repeat !important;
 }
 
+.icon-export {
+    background: url("../images/Export.png") no-repeat !important;
+}
+
 #cy {
   height: 100%;
   width: 100%;
