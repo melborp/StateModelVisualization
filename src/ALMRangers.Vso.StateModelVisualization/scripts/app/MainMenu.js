@@ -61,14 +61,14 @@ define(["require", "exports", "VSS/Utils/Core", "VSS/Host",
         ItemsView.prototype._createToolbarItems = function () {
             var items = [];
 
-            items.push({ id: "zoom-in", text: "Zoom In", title: "Zoom In", showText: false, icon: "icon-zoom-in", disabled: true });
-            items.push({ id: "zoom-out", text: "Zoom Out", title: "Zoom Out", showText: false, icon: "icon-zoom-out", disabled: true });
-            items.push({ id: "zoom-100", text: "Zoom 100%", title: "Zoom to 100%", showText: false, icon: "icon-zoom-100", disabled: true });
-            items.push({ id: "fit-to", text: "Fit to screen", title: "Fit to screen", showText: false, icon: "icon-fit-to", disabled: true });
+            items.push({ id: "zoom-in", text: "Zoom In", title: "Zoom In", showText: false, icon: "icon-zoom-in-smv", disabled: true });
+            items.push({ id: "zoom-out", text: "Zoom Out", title: "Zoom Out", showText: false, icon: "icon-zoom-out-smv", disabled: true });
+            items.push({ id: "zoom-100", text: "Zoom 100%", title: "Zoom to 100%", showText: false, icon: "icon-zoom-100-smv", disabled: true });
+            items.push({ id: "fit-to", text: "Fit to screen", title: "Fit to screen", showText: false, icon: "icon-fit-to-smv", disabled: true });
 
             items.push({ separator: true });
 
-            items.push({ id: "export-graph", text: "Export Graph", title: "Export Graph", showText: false, icon: "icon-export", disabled: true });
+            items.push({ id: "export-graph", text: "Export Graph", title: "Export Graph", showText: false, icon: "icon-export-smv", disabled: true });
 
             return items;
         };

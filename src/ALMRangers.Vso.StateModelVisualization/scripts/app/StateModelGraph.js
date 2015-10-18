@@ -102,19 +102,22 @@ define(["require", "exports"], function (require, exports) {
         StateModelGraph.prototype.zoomIn = function () {
             var currentZoom = this.cy.zoom();
             this.cy.zoom(currentZoom + zoomStepSize);
+            this.cy.center();
         }
 
         StateModelGraph.prototype.zoomOut = function () {
             var currentZoom = this.cy.zoom();
             this.cy.zoom(currentZoom - zoomStepSize);
+            this.cy.center();
         }
 
         StateModelGraph.prototype.zoomTo100 = function () {
             this.cy.zoom(zoom100);
+            this.cy.center();
         }
         StateModelGraph.prototype.exportImage = function () {
             var self = this;
-            var png64 = self.cy.png({ full: true });
+            var png64 = self.cy.png({ full: true, scale : 5});
             return png64;
         }
         StateModelGraph.prototype.resize = function () {

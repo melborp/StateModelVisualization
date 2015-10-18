@@ -12,24 +12,34 @@
  //  </summary>
  //---------------------------------------------------------------------*/
 
-.icon-zoom-100 {
-    background-image: url("/images/Refresh.png") !important;
+.icon-zoom-100-smv {
+    background-image: url("/images/Refresh.png");
+    background-repeat:  no-repeat !important;
+    background-size: 16px 16px;
 }
 
-.icon-zoom-out {
-    background-image: url("/images/Zoom_ZoomOut.png") !important;
+.icon-zoom-out-smv {
+        background-image: url("/images/Zoom_ZoomOut.png");
+    background-repeat:  no-repeat !important;
+    background-size: 16px 16px;
 }
 
-.icon-zoom-in {
-    background-image: url("/images/Zoom_ZoomIn.png") !important;
+.icon-zoom-in-smv {
+        background-image: url("/images/Zoom_ZoomIn.png");
+    background-repeat:  no-repeat !important;
+    background-size: 16px 16px;
 }
 
-.icon-fit-to {
-    background-image: url("/images/FitTo.png") !important;
+.icon-fit-to-smv {
+        background-image: url("/images/FitTo.png");
+    background-repeat:  no-repeat !important;
+    background-size: 16px 16px;
 }
 
-.icon-export {
-    background-image: url("/images/Export.png") !important;
+.icon-export-smv {
+        background-image: url("/images/Export.png");
+    background-repeat:  no-repeat !important;
+    background-size: 16px 16px;
 }
 
 #cy {
