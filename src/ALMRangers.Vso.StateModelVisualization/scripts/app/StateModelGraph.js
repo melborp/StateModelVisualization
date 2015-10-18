@@ -16,7 +16,7 @@ define(["require", "exports"], function (require, exports) {
     var StateModelGraph = (function() {
 
         var zoomStepSize = 0.1;
-        var zoom100 = 2.5;
+        var zoom100 = 3;
 
         function StateModelGraph(container, cytoscape) {
             this.container = container;
