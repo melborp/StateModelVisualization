@@ -23,7 +23,7 @@
                  "ms.vss-work-web.work-hub-group"
              ],
              "properties": {
-                 "name": "State Model Visualization",
+                 "name": "State Visualize",
                  "order": 99,
                  "uri": "app.html"
              }
