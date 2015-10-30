@@ -16,7 +16,7 @@
     ],
      "contributions": [
          {
-             "id": "AlmRangers.StateModelVisualization",
+             "id": "state-model-visualization-hub",
              "type": "ms.vss-web.hub",
              "description": "Adds a 'State Model Visualization' hub to the Work hub group.",
              "targets": [

@@ -16,7 +16,7 @@ define(["require", "exports"], function (require, exports) {
     var StateModelGraph = (function() {
 
         var zoomStepSize = 0.1;
-        var zoom100 = 3;
+        var zoom100 = 1;
 
         function StateModelGraph(container, cytoscape) {
             this.container = container;
@@ -25,7 +25,7 @@ define(["require", "exports"], function (require, exports) {
             this.cytoscape = cytoscape;
         }
 
-        StateModelGraph.prototype.create = function(witTypeName, data) {
+        StateModelGraph.prototype.create = function(witTypeName, callback, callbackData) {
             var self = this;
             self.currentWitType = witTypeName;
             self.cytoscape({
@@ -36,18 +36,21 @@ define(["require", "exports"], function (require, exports) {
                         'content': 'data(name)',
                         'text-valign': 'center',
                         'color': 'black',
-                        'width': '25px',
-                        'height': '25px',
+                        'width': '75px',
+                        'height': '75px',
                         'background-color': 'rgba(254,199,0,1)',    
                         'border-color': 'black',
                         'border-width': '0.25px',
-                        'font-size': '5px',
-                        'font-family': 'Segoe UI'
+                        'font-size': '12px',
+                        'font-family': 'Segoe UI,Tahoma,Arial,Verdana'
                     })
                     .selector('node#Initial')
                     .css({
-                        'width': '3px',
-                        'height': '3px'
+                        'width': '8px',
+                        'height': '8px',
+                        'background-color': '#000000',
+                        'border-color': 'black',
+                        'border-width': '0.25px',
                     })
                     .selector('edge')
                     .css({
@@ -60,20 +63,11 @@ define(["require", "exports"], function (require, exports) {
                         'target-arrow-color': 'black',
                         'source-arrow-color': 'black'
                     }),
-                //.selector('.faded')
-                //  .css({
-                //      'opacity': 0.25,
-                //      'text-opacity': 0
-                //  }),
-
-                elements: {
-                    nodes: data.nodes,
-                    edges: data.edges
-                },
 
                 layout: {
-                    name: 'preset'
-                    //,positions: data.positions
+                    name: 'dagre',
+                    fit: true,
+                    rankDir: 'TB'
                 },
 
                 // on graph initial layout done (could be async depending on layout...)
@@ -90,7 +84,7 @@ define(["require", "exports"], function (require, exports) {
                     cy.elements().unselectify();
                     cy.userZoomingEnabled(false);
 
-                    //$(window).on("resize", resizeGraphViewport);
+                    callback(callbackData);
                 }
             });
         }
@@ -117,7 +111,7 @@ define(["require", "exports"], function (require, exports) {
         }
         StateModelGraph.prototype.exportImage = function () {
             var self = this;
-            var png64 = self.cy.png({ full: true, scale : 5});
+            var png64 = self.cy.png({ full: true, scale : 2});
             return png64;
         }
         StateModelGraph.prototype.resize = function () {
@@ -167,59 +161,90 @@ define(["require", "exports"], function (require, exports) {
 
                 //Create nodes and edges for graph
                 var states = new Array();
-                var nodes = new Array();
-                var edges = new Array();
-                var newState;
 
+                var rank1Elements = new Array();
+                var rank2Elements = new Array();
+                var rank3Elements = new Array();
+            
+                var rankedArray = new Array();
 
                 for (state in selectedWit.transitions) {
-                    if (state === "") {
-                        newState = state;
-                    }
                     states.push(state);
                 }
-                var stateCount = states.length;
-                var currentX = 150, currentY = 125;//default placement on 3rd row and in case state count 2 or 3, place in one line.
-                var initialX = 150; //default, where state count is 2 or 3 (initial + new + done)
 
-                if ((stateCount - 2) > 1) {
-                    initialX = ((stateCount - 2) * 100) / 2;
-                    currentX = 50;
+            var initialNodeId = 'Initial';
+            var initialNodeTargetId;
+            var nodes = new Array();
+            for (state in selectedWit.transitions) {
+                var newNode;
+                if (state === "") {
+                    newNode = { group: 'nodes', data: { id: initialNodeId, name: '' } };
+                } else {
+                    newNode = { group: 'nodes', data: { id: state, name: state } };
                 }
 
-                for (state in selectedWit.transitions) {
-                    var newNode;
-                    if (state === "") {
-                        newNode = { data: { id: 'Initial', name: '' }, position: { x: initialX, y: 0 } };
+                nodes.push(newNode);
+
+                var transitions = selectedWit.transitions[state];
+
+                for (var j = 0; j < transitions.length; j++) {
+                    if (newNode.data.id === transitions[j].to)
+                        continue;
+                    //Check if the TO state is the State array, sometimes there's TO transitions into states that dont exist. not sure why.
+                    if ($.inArray(transitions[j].to, states) === -1)
+                        continue;
+
+                    var edge = { group: 'edges', data: { id: newNode.data.id + "-" + transitions[j].to, source: newNode.data.id, target: transitions[j].to } };
+
+                    if (newNode.data.id === initialNodeId) {
+                        initialNodeTargetId = transitions[j].to;
+                        rank2Elements.push(edge);//the edge connected to initial is ranked 2
                     } else {
-                        var position = { x: currentX, y: currentY };
-                        //Where the state is the state that starts from Initial, position it close to initial
-                        if (state === selectedWit.transitions[newState][0].to) {
-                            position = { x: initialX, y: 50 };
-                        } else {
-                            currentX += 100;
-                        }
-
-                        newNode = { data: { id: state, name: state }, position: position };
-                    }
-
-                    nodes.push(newNode);
-
-                    var transitions = selectedWit.transitions[state];
-
-                    for (var j = 0; j < transitions.length; j++) {
-                        if (newNode.data.id === transitions[j].to)
-                            continue;
-                        //Check if the TO state is the State array, sometimes there's TO transitions into states that dont exist. not sure why.
-                        if ($.inArray(transitions[j].to, states) === -1)
-                            continue;
-
-                        var edge = { data: { source: newNode.data.id, target: transitions[j].to } };
-                        edges.push(edge);
+                        rank3Elements.push(edge);//the other edges are ranked 3
                     }
                 }
-                var data = { nodes: nodes, edges: edges };
-                return data;
+            }
+
+            //rank nodes
+            nodes.forEach(function(node) {
+                if (node.data.id === "Initial") {
+                    rank1Elements.push(node);
+                }
+                else if (initialNodeTargetId === node.data.id) {//the node connected to initial is ranked 2
+                    rank2Elements.push(node);
+                } else {
+                    rank3Elements.push(node); //the other nodes are ranked 3
+                }
+            });
+
+            rankedArray.push(rank1Elements);
+            rankedArray.push(rank2Elements);
+            rankedArray.push(rank3Elements);
+
+            return rankedArray;
+        }
+
+        StateModelGraph.prototype.addElements = function (elements) {
+            var self = this;
+            var newElements = self.cy.collection();
+
+            if (elements.length > 0) {
+                newElements = self.cy.add(elements);
+                self.refreshLayout();
+            }
+            return newElements;
+        }
+
+        StateModelGraph.prototype.refreshLayout = function () {
+            var self = this;
+            self.cy.layout(
+                    {
+                        name: 'dagre',
+                        rankDir: 'TB',
+                        padding: 50,
+                        fit: false,
+                        stop: function () { self.zoomTo100(); }
+                    });
         }
         
         return StateModelGraph;
