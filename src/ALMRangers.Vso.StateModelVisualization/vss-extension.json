@@ -1,32 +1,53 @@
 ﻿{
-    "manifestVersion": 1,
-    "id": "tk-vsoextensions-StateModelVisualization",
-    "version": "1.0.0",
-    "name": "State Model Visualization",  
-    "description": "An extension for Visual Studio Online that adds the ability to view the state model for a selected work item.",
+  "manifestVersion": 1,
+  "id": "tk-vsoextensions-StateModelVisualization",
+  "version": "1.0.0",
+  "name": "State Model Visualization",
+  "description": "An extension for Visual Studio Online that adds the ability to view the state model for a selected work item.",
   "publisher": "taavi-koosaar",
   "scopes": [ "vso.work" ],
-    "baseUri": "https://almrangers-vsoextensions-statemodelvisualization.azurewebsites.net/",
-    "icons": {
-      "wide": "images/StateModelWideIcon.png",
-      "default": "images/StateModelShortIcon.png"
+  "icons": {
+    "wide": "images/StateModelWideIcon.png",
+    "default": "images/StateModelShortIcon.png"
+  },
+  "categories": [
+    "Productivity"
+  ],
+  "contributions": [
+    {
+      "id": "state-model-visualization-hub",
+      "type": "ms.vss-web.hub",
+      "description": "Adds a 'State Model Visualization' hub to the Work hub group.",
+      "targets": [
+        "ms.vss-work-web.work-hub-group"
+      ],
+      "properties": {
+        "name": "State Visualizer",
+        "order": 99,
+        "uri": "app.html"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "scripts",
+      "addressable": true
     },
-    "categories": [
-      "Productivity"
-    ],
-     "contributions": [
-         {
-             "id": "state-model-visualization-hub",
-             "type": "ms.vss-web.hub",
-             "description": "Adds a 'State Model Visualization' hub to the Work hub group.",
-             "targets": [
-                 "ms.vss-work-web.work-hub-group"
-             ],
-             "properties": {
-                 "name": "State Visualizer",
-                 "order": 99,
-                 "uri": "app.html"
-             }
-         }
-     ]
+    {
+      "path": "images",
+      "addressable": true
+    },
+    {
+      "path": "sdk",
+      "addressable": true
+    },
+    {
+      "path": "css",
+      "addressable": true
+    },
+    {
+      "path": "app.html",
+      "addressable": true
+    }
+  ]
 }
