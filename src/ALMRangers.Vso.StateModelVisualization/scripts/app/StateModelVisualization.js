@@ -7,8 +7,8 @@
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
  // <summary>
- //   Part of the State Model Visualization VSO extension by the
- //     ALM Rangers. The main application flow and logic.
+ //   Part of the State Model Visualization VSO extension.
+ //   The main application flow and logic.
  //  </summary>
 //---------------------------------------------------------------------*/
 

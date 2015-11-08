@@ -7,8 +7,8 @@
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
  // <summary>
- //   Part of the State Model Visualization VSO extension by the
- //     ALM Rangers.  This file defines the State Model Graph logic tied to Cytoscape.js.
+ //   Part of the State Model Visualization VSO extension.
+ //   This file defines the State Model Graph logic tied to Cytoscape.js.
  //  </summary>
 //---------------------------------------------------------------------*/
 

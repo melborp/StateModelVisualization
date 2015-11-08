@@ -7,8 +7,8 @@
  //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
  // </copyright>
  // <summary>
- //   Part of the State Model Visualization VSO extension by the
- //     ALM Rangers.  This file defines CSS styling for the application.
+ //   Part of the State Model Visualization VSO extension.
+ //   This file defines CSS styling for the application.
  //  </summary>
  //---------------------------------------------------------------------*/
 
@@ -19,13 +19,13 @@
 }
 
 .icon-zoom-out-smv {
-        background-image: url("/images/Zoom_ZoomOut.png");
+        background-image: url("/images/ZoomZoomOut.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }
 
 .icon-zoom-in-smv {
-        background-image: url("/images/Zoom_ZoomIn.png");
+        background-image: url("/images/ZoomZoomIn.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }

@@ -7,17 +7,11 @@
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
 // <summary>
-//   Part of the State Model Visualization VSO extension by the
-//     ALM Rangers.  This class defines the MainMenu creation in the VSO Hub.
+//   Part of the State Model Visualization VSO extension.
+//   This class defines the MainMenu creation in the VSO Hub.
 //  </summary>
 //---------------------------------------------------------------------*/
 
-//var __extends = this.__extends || function (d, b) {
-//    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-//    function __() { this.constructor = d; }
-//    __.prototype = b.prototype;
-//    d.prototype = new __();
-//};
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
     function __() { this.constructor = d; }

@@ -60,12 +60,12 @@
   <ItemGroup>
     <None Include="vss-extension.json" />
     <Content Include="images\FitTo.png" />
-    <Content Include="images\statemodel_short_icon.png" />
-    <Content Include="images\statemodel_wide_icon.png" />
+    <Content Include="images\StateModelShortIcon.png" />
+    <Content Include="images\StateModelWideIcon.png" />
     <Content Include="images\Export.png" />
     <Content Include="images\Refresh.png" />
-    <Content Include="images\Zoom_ZoomIn.png" />
-    <Content Include="images\Zoom_ZoomOut.png" />
+    <Content Include="images\ZoomZoomIn.png" />
+    <Content Include="images\ZoomZoomOut.png" />
     <None Include="Properties\PublishProfiles\almrangers-vsoextensions-StateModelVisualization.pubxml" />
     <None Include="Properties\PublishProfiles\statemodels - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\statemodels - Web Deploy.pubxml" />
