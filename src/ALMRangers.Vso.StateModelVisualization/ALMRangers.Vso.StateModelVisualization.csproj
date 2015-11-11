@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="overview.md" />
     <None Include="vss-extension.json" />
     <Content Include="images\FitTo.png" />
     <Content Include="images\StateModelShortIcon.png" />
@@ -79,7 +80,9 @@
   <ItemGroup>
     <Content Include="css\app.css" />
     <Content Include="app.html" />
-    <Content Include="MIT-LICENSE.txt" />
+    <Content Include="License.txt" />
+    <Content Include="screenshots\Screen1.png" />
+    <Content Include="screenshots\Screen2.png" />
     <Content Include="scripts\app\StateModelVisualization.js" />
     <Content Include="scripts\app\MainMenu.js" />
     <Content Include="scripts\Cytoscape\cytoscape.js" />
@@ -88,6 +91,7 @@
     <Content Include="scripts\Cytoscape\LGPL-LICENSE.txt" />
     <Content Include="scripts\app\StateModelGraph.js" />
     <Content Include="sdk\scripts\VSS.SDK.js" />
+    <Content Include="ThirdPartyNotice.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

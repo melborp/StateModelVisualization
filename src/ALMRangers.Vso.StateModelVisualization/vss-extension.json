@@ -7,12 +7,38 @@
   "publisher": "taavi-koosaar",
   "scopes": [ "vso.work" ],
   "icons": {
-    "wide": "images/StateModelWideIcon.png",
     "default": "images/StateModelShortIcon.png"
   },
   "categories": [
-    "Productivity"
+    "Developer samples"
   ],
+  "tags": [
+    "work item types",
+    "visualize visualization"
+  ],
+  "screenshots": [
+    {
+      "path": "screenshots/screen1.png"
+    },
+    {
+      "path": "screenshots/screen2.png"
+    }
+  ],
+  "links": {
+    "home": {
+      "uri": "http://aka.ms/vsoext11"
+    },
+    "support": {
+      "uri": "http://aka.ms/vsarcontact"
+    },
+    "issues": {
+      "uri": "http://aka.ms/vsoext11"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
   "contributions": [
     {
       "id": "state-model-visualization-hub",
@@ -29,8 +55,11 @@
     }
   ],
   "content": {
+    "details": {
+      "path": "overview.md"
+    },
     "license": {
-      "path": "MIT-LICENSE.txt"
+      "path": "License.txt"
     }
   },
   "files": [
@@ -53,6 +82,15 @@
     {
       "path": "app.html",
       "addressable": true
+    },
+        {
+      "path": "ThirdPartyNotice.txt",
+      "addressable": true
     }
-  ]
+  ],
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ]
 }

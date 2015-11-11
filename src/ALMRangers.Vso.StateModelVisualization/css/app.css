@@ -13,31 +13,31 @@
  //---------------------------------------------------------------------*/
 
 .icon-zoom-100-smv {
-    background-image: url("/images/Refresh.png");
+    background-image: url("../images/Refresh.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }
 
 .icon-zoom-out-smv {
-        background-image: url("/images/ZoomZoomOut.png");
+        background-image: url("../images/ZoomZoomOut.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }
 
 .icon-zoom-in-smv {
-        background-image: url("/images/ZoomZoomIn.png");
+        background-image: url("../images/ZoomZoomIn.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }
 
 .icon-fit-to-smv {
-        background-image: url("/images/FitTo.png");
+        background-image: url("../images/FitTo.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }
 
 .icon-export-smv {
-        background-image: url("/images/Export.png");
+        background-image: url("../images/Export.png");
     background-repeat:  no-repeat !important;
     background-size: 16px 16px;
 }

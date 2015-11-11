@@ -18,9 +18,9 @@ var __extends = (this && this.__extends) || function (d, b) {
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
 
-define(["require", "exports", "VSS/Utils/Core", "VSS/Host",
+define(["require", "exports", "VSS/Utils/Core",
     "VSS/Controls", "VSS/Controls/Menus", "VSS/Controls/Common", "Scripts/App/StateModelGraph"],
-    function (require, exports, Core, VSS_HOST, Controls, MenuControls, CommonControls, StateModelGraph) {
+    function (require, exports, Core, Controls, MenuControls, CommonControls, StateModelGraph) {
 
     var ItemsView = (function (_super) {
         __extends(ItemsView, _super);
