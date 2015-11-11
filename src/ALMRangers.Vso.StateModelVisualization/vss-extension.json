@@ -30,10 +30,10 @@
       "uri": "http://aka.ms/vsoext11"
     },
     "support": {
-      "uri": "http://aka.ms/vsarcontact"
+      "uri": "https://github.com/melborp/StateModelVisualization"
     },
     "issues": {
-      "uri": "http://aka.ms/vsoext11"
+      "uri": "https://github.com/melborp/StateModelVisualization/issues"
     }
   },
   "branding": {
