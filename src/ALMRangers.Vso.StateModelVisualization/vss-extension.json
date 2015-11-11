@@ -3,8 +3,9 @@
   "id": "tk-vsoextensions-StateModelVisualization",
   "version": "1.1.0",
   "name": "State Model Visualization",
-  "description": "An extension for Visual Studio Online that adds the ability to view the state model for a selected work item.",
+  "description": "Add the ability to view the state model for a selected work item type.",
   "publisher": "taavi-koosaar",
+  "public": true,
   "scopes": [ "vso.work" ],
   "icons": {
     "default": "images/StateModelShortIcon.png"

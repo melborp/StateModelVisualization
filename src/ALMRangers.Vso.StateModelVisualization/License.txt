@@ -3,7 +3,7 @@ State Model Visualization Visual Studio Online Extension
 
 The MIT License (MIT)
 
-Copyright (c) 2015 Microsoft Corporation
+Copyright (c) 2015 Taavi Kõosaar | Taavi Koosaar
 
 All rights reserved.
 

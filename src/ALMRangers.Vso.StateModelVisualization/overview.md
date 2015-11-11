@@ -1,5 +1,5 @@
 
-The **State Model Visualization** extension allows you to visualize the work item type states and transitions. The main usage is for documentation purpose and print out.
+The **State Model Visualization** extension allows you to visualize the work item type states and transitions. The main usage is for documentation purpose and print outs.
 
 **How to use**
 
@@ -19,6 +19,8 @@ The **State Model Visualization** extension allows you to visualize the work ite
 
 **Learn more about this extension**
 
+The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization). Feel free to take and modify.
+
 To learn more about developing an extension for Visual Studio Online, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
 
-[Third Party Notice](https://marketplace.visualstudio.com/items/alm-rangers.almrangers-vsoextensions-WorkitemVisualization/ThirdPartyNotice.txt).
+[Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/tk-vsoextensions-StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).

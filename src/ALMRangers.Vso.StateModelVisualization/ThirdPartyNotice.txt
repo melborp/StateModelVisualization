@@ -1,15 +1,15 @@
-﻿THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
-Do Not Translate or Localize
+﻿This file is based on or incorporates material from the projects listed below (Third Party IP). 
+The original copyright notice and the license under which Taavi Koosaar received such Third Party IP, 
+are set forth below. Such licenses and notices are provided for informational purposes only. 
+Taavi Koosaar licenses the Third Party IP to you under the licensing terms for the State Visualization Extension product. 
+Taavi Koosaar reserves all other rights not expressly granted under this agreement, whether by implication, estoppel or otherwise. 
 
-This file provides information in Section A regarding components that are being relicensed to you by Microsoft under Microsoft's software licensing terms, and information in Section B regarding components that are being made available to you by Microsoft under the original licensing terms. Microsoft reserves all rights not expressly granted herein, whether by implication, estoppel or otherwise.
+Provided for Informational Purposes Only
 
-Section A: Microsoft is offering you a license to use the following components with Work Item Visualisation subject to the terms of the Microsoft software license terms for Work Item Visualisation software products (the “Microsoft Program”).
+----------------------
 
-1.	Dagre (https://github.com/cpettitt/dagre/)
+Dagre (https://github.com/cpettitt/dagre/)
 
-
-%% Dagre NOTICES AND INFORMATION BEGIN HERE
-=========================================
 Copyright (c) 2012-2014 Chris Pettitt
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,19 +30,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
+----------------------
 
----LICENSE--------------------------------------------
+Cytoscape.js (https://github.com/cytoscape/cytoscape.js)
 
-=========================================
-END OF Dagre NOTICES AND INFORMATION
-
-Section B: Microsoft is offering you a license to use the following components with Work Item Visualisation subject to their original license terms.
-
-1.	Cytoscape.js (https://github.com/cytoscape/cytoscape.js)
-
-
-%% Cytoscape.js NOTICES, INFORMATION, AND LICENSE BEGIN HERE
-=========================================
                    GNU LESSER GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -209,10 +200,6 @@ apply, that proxy's public statement of acceptance of any version is
 permanent authorization for you to choose that version for the
 Library.
 
----LICENSE--------------------------------------------
-
-=========================================
-END OF Cytoscape.js NOTICES, INFORMATION, AND LICENSE
-
+----------------------
 
 
