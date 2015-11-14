@@ -66,7 +66,7 @@ define(["require", "exports"], function (require, exports) {
 
                 layout: {
                     name: 'dagre',
-                    fit: true,
+                    fit: false,
                     rankDir: 'TB'
                 },
 
@@ -96,18 +96,18 @@ define(["require", "exports"], function (require, exports) {
         StateModelGraph.prototype.zoomIn = function () {
             var currentZoom = this.cy.zoom();
             this.cy.zoom(currentZoom + zoomStepSize);
-            this.cy.center();
+            //this.cy.center();
         }
 
         StateModelGraph.prototype.zoomOut = function () {
             var currentZoom = this.cy.zoom();
             this.cy.zoom(currentZoom - zoomStepSize);
-            this.cy.center();
+            //this.cy.center();
         }
 
         StateModelGraph.prototype.zoomTo100 = function () {
             this.cy.zoom(zoom100);
-            this.cy.center();
+            //this.cy.center();
         }
         StateModelGraph.prototype.exportImage = function () {
             var self = this;
@@ -241,8 +241,9 @@ define(["require", "exports"], function (require, exports) {
                     {
                         name: 'dagre',
                         rankDir: 'TB',
-                        padding: 50,
-                        fit: false,
+                        //padding: 50,
+                        fit: true,
+                        minLen: 2,
                         stop: function () { self.zoomTo100(); }
                     });
         }
