@@ -23,4 +23,4 @@ The source to this extension is available on GitHub: [StateModelVisualization](h
 
 To learn more about developing an extension for Visual Studio Online, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
 
-[Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/tk-vsoextensions-StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).
+[Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).
