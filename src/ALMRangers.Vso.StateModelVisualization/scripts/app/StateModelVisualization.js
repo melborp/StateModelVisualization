@@ -7,7 +7,7 @@
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
  // <summary>
- //   Part of the State Model Visualization VSTS extension.
+ //   Part of the State Model Visualization VSO extension.
  //   The main application flow and logic.
  //  </summary>
 //---------------------------------------------------------------------*/
@@ -33,7 +33,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
             mainMenu = Controls.Enhancement.enhance(MainMenu.ItemsView, $(".hub-view"), {});
             graph = StateModelGraph.graph;
 
-            // Get a WIT client to make REST calls to VSTS 
+            // Get a WIT client to make REST calls to VSO 
             var witClient = VssService.getCollectionClient(TfsWitRest.WorkItemTrackingHttpClient);
 
             witClient.getWorkItemTypes(context.project.name).then(function(wits) {

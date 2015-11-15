@@ -7,8 +7,8 @@
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
 // <summary>
-//   Part of the State Model Visualization VSTS extension.
-//   This class defines the MainMenu creation in the VSTS Hub.
+//   Part of the State Model Visualization VSO extension.
+//   This class defines the MainMenu creation in the VSO Hub.
 //  </summary>
 //---------------------------------------------------------------------*/
 

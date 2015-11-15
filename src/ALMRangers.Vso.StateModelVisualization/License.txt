@@ -1,5 +1,5 @@
 
-State Model Visualization Visual Studio Team Services Extension
+State Model Visualization Visual Studio Online Extension
 
 The MIT License (MIT)
 
