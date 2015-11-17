@@ -12,14 +12,13 @@ Export your chart visualization for offline viewing or printing.
 
 ## Quick steps to get started ##
 
-- Basic
+- **Visualize**
 	1. Navigate to your team project.
-	2. Select **WORK** hub group.
-	3. Navigate to a **State Visualizer** hub.
-	4. Use the left tree view to select work item type and the states and transitions are visualized on the right side.
-- Zoom
-	1. Click on **Zoom In**, **Zoom Out**, **Zoom to original** size or **Fit To** icons on the toolbar above the visualization.
-- Export
+	1. Select **WORK** hub group.
+	1. Navigate to a **State Visualizer** hub.
+	1. Use the left tree view to select work item type and the states and transitions are visualized on the right side.
+	1. Click on `Zoom In`, `Zoom Out`, `Zoom to original size` or `Fit To icons` on the toolbar to re-size.
+- **Export**
 	1. Export the visualization in any browser.
 
 ## Known issues ##
