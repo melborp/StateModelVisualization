@@ -1,11 +1,20 @@
+## Visualize work item type states and transitions##
 
-The **State Model Visualization** extension allows you to visualize the work item type states and transitions. The main usage is for documentation purpose and print outs.
+Every work item type in Visual Studio Online has a states, transitions and reasons defined. With this extension you can visualize those states and transitions for regular and hidden work item types.
 
-**How to use**
+![Visualize](images/Screen1-small.png)
+
+### Export for offline viewing ###
+
+Export your chart visualization for offline viewing or printing.
+
+![Export](images/Screen2-small.png)
+
+## Quick steps to get started ##
 
 - Basic
-	1. Connect to your team project.
-	2. Select **WORK**.
+	1. Navigate to your team project.
+	2. Select **WORK** hub group.
 	3. Navigate to a **State Visualizer** hub.
 	4. Use the left tree view to select work item type and the states and transitions are visualized on the right side.
 - Zoom
@@ -13,11 +22,11 @@ The **State Model Visualization** extension allows you to visualize the work ite
 - Export
 	1. Export the visualization in any browser.
 
-**Known Issues**
+## Known issues ##
 
 - Not showing reasons for transitions. Api doesnt expose it yet.
 
-**Learn more about this extension**
+## Learn more ##
 
 The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization). Feel free to take and modify.
 

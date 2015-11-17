@@ -11,19 +11,11 @@
     "default": "images/StateModelShortIcon.png"
   },
   "categories": [
-    "Developer samples"
+    "Other"
   ],
   "tags": [
     "work item types",
     "visualize visualization"
-  ],
-  "screenshots": [
-    {
-      "path": "screenshots/screen1.png"
-    },
-    {
-      "path": "screenshots/screen2.png"
-    }
   ],
   "links": {
     "home": {

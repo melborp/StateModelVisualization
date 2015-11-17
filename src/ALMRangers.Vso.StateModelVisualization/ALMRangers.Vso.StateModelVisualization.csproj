@@ -58,6 +58,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\Screen1-small.png" />
+    <Content Include="images\Screen2-small.png" />
     <Content Include="overview.md" />
     <None Include="vss-extension.json" />
     <Content Include="images\FitTo.png" />
@@ -81,8 +83,6 @@
     <Content Include="css\app.css" />
     <Content Include="app.html" />
     <Content Include="License.txt" />
-    <Content Include="screenshots\Screen1.png" />
-    <Content Include="screenshots\Screen2.png" />
     <Content Include="scripts\app\StateModelVisualization.js" />
     <Content Include="scripts\app\MainMenu.js" />
     <Content Include="scripts\Cytoscape\cytoscape.js" />
