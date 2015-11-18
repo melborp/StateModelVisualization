@@ -60,6 +60,7 @@
   <ItemGroup>
     <Content Include="images\Screen1-small.png" />
     <Content Include="images\Screen2-small.png" />
+    <Content Include="images\WVizDemo.png" />
     <Content Include="overview.md" />
     <None Include="vss-extension.json" />
     <Content Include="images\FitTo.png" />

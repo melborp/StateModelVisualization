@@ -1,6 +1,6 @@
 ## Visualize work item type states and transitions##
 
-Every work item type in Visual Studio Online has a states, transitions and reasons defined. With this extension you can visualize those states and transitions for regular and hidden work item types.
+[![Demo](images/wvizdemo.png)](https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-State-Model-Visualization-Extension) Every work item type in Visual Studio Online has a states, transitions and reasons defined. With this extension you can visualize those states and transitions for regular and hidden work item types.
 
 ![Visualize](images/Screen1-small.png)
 
