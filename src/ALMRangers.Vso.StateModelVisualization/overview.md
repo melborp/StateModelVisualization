@@ -1,6 +1,6 @@
 ## Visualize work item type states and transitions##
 
-[![Demo](images/wvizdemo.png)](https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-State-Model-Visualization-Extension) Every work item type in Visual Studio Online has a states, transitions and reasons defined. With this extension you can visualize those states and transitions for regular and hidden work item types.
+[![Demo](images/wvizdemo.png)](https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-State-Model-Visualization-Extension) Every work item type in Visual Studio Team Services has a states, transitions and reasons defined. With this extension you can visualize those states and transitions for regular and hidden work item types.
 
 ![Visualize](images/Screen1-small.png)
 
@@ -29,6 +29,6 @@ Export your chart visualization for offline viewing or printing.
 
 The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization). Feel free to take and modify.
 
-To learn more about developing an extension for Visual Studio Online, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
+To learn more about developing an extension for Visual Studio Team Services, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
 
 [Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).

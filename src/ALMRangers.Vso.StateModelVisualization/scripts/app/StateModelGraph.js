@@ -7,7 +7,7 @@
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
  // <summary>
- //   Part of the State Model Visualization VSO extension.
+ //   Part of the State Model Visualization VSTS extension.
  //   This file defines the State Model Graph logic tied to Cytoscape.js.
  //  </summary>
 //---------------------------------------------------------------------*/
