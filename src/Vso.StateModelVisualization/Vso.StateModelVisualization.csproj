@@ -70,9 +70,6 @@
     <Content Include="images\Refresh.png" />
     <Content Include="images\ZoomZoomIn.png" />
     <Content Include="images\ZoomZoomOut.png" />
-    <None Include="Properties\PublishProfiles\almrangers-vsoextensions-StateModelVisualization.pubxml" />
-    <None Include="Properties\PublishProfiles\statemodels - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\statemodels - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
