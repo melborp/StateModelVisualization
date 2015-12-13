@@ -56,13 +56,6 @@ define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/
                     .selector('edge')
                     .css({
                         'target-arrow-shape': 'triangle'
-                    })
-                    .selector(':selected')
-                    .css({
-                        'background-color': 'black',
-                        'line-color': 'black',
-                        'target-arrow-color': 'black',
-                        'source-arrow-color': 'black'
                     }),
 
                 layout: {
