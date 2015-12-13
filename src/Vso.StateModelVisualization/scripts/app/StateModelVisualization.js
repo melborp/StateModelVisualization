@@ -105,7 +105,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
                     treeContainer.bind("selectionchanged", function(e, args) {
                         treeView.TreeNode = args.selectedNode;
                         var selectedNode = args.selectedNode;
-                        if (selectedNode && selectedNode.text !== "Work Items" && selectedNode !== "Hidden Work Items") {
+                        if (selectedNode && selectedNode.text !== "Work Items" && selectedNode.text !== "Hidden Work Items") {
                             graph.create(selectedNode.text, afterGraphReady, { name: selectedNode.text });
                         }
                     });
