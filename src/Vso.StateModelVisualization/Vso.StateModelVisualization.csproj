@@ -60,6 +60,7 @@
   <ItemGroup>
     <Content Include="images\Screen1-small.png" />
     <Content Include="images\Screen2-small.png" />
+    <Content Include="images\StateModelShortIcon-16x16.png" />
     <Content Include="images\WVizDemo.png" />
     <Content Include="overview.md" />
     <None Include="vss-extension.json" />
@@ -91,6 +92,7 @@
     <Content Include="scripts\app\StateModelGraph.js" />
     <Content Include="sdk\scripts\VSS.SDK.js" />
     <Content Include="ThirdPartyNotice.txt" />
+    <Content Include="StateDiagramWitButton.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

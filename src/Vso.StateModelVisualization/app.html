@@ -39,8 +39,6 @@
                 </div>
                 <div class="hub-progress pageProgressIndicator" style="display: none;"></div>
                 <div class="right-hub-content">
-                    <div class="hub-pivot">
-                    </div>
                     <div class="pivot-hub-content">
                         <div class="main-content">
                             <div class="toolbar hub-pivot-toolbar">
@@ -55,13 +53,7 @@
 <script type="text/javascript">
     // Initialize the VSS sdk
     VSS.init({
-        setupModuleLoader: true,
-        explicitNotifyLoaded: true,
-        moduleLoaderConfig: {
-            paths: {
-                "Scripts/App": "scripts/app/"
-            }
-        }
+        explicitNotifyLoaded: true
     });
     // Wait for the SDK to be initialized
     VSS.ready(function () {

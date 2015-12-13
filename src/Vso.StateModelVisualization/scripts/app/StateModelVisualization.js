@@ -35,6 +35,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
 
             // Get a WIT client to make REST calls to VSTS 
             var witClient = VssService.getCollectionClient(TfsWitRest.WorkItemTrackingHttpClient);
+            var configuration = VSS.getConfiguration().action;
 
             witClient.getWorkItemTypes(context.project.name).then(function(wits) {
                 witClient.getWorkItemTypeCategory(context.project.name).then(function (categories) {

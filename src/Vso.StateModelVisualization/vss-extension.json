@@ -45,6 +45,31 @@
         "order": 99,
         "uri": "app.html"
       }
+    },
+    {
+      "id": "work-item-state-diagram-dialog",
+      "type": "ms.vss-web.control",
+      "targets": [ ".controls" ],
+      "properties": {
+        "uri": "app.html"
+      }
+    },
+    {
+      "id": "state-diagram-work-item-button",
+      "type": "ms.vss-web.action",
+      "description": "Work item States",
+      "targets": [
+        "ms.vss-work-web.work-item-toolbar-menu"
+      ],
+      "properties": {
+        "text": "States",
+        "title": "Show state diagram",
+        "toolbarText": "States",
+        "icon": "images/StateModelShortIcon-16x16.png",
+        "group": "actions",
+        "uri": "StateDiagramWitButton.html",
+        "registeredObjectId": "state-diagram-work-item-button"
+      }
     }
   ],
   "content": {
@@ -76,7 +101,11 @@
       "path": "app.html",
       "addressable": true
     },
-        {
+    {
+      "path": "StateDiagramWitButton.html",
+      "addressable": true
+    },
+    {
       "path": "ThirdPartyNotice.txt",
       "addressable": true
     }
