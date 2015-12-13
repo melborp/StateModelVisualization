@@ -36,6 +36,7 @@ define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/
                     .css({
                         'content': 'data(name)',
                         'text-valign': 'center',
+                        'text-wrap':'wrap',
                         'color': 'black',
                         'width': '75px',
                         'height': '75px',
