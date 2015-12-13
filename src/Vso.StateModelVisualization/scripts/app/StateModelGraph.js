@@ -12,7 +12,7 @@
  //  </summary>
 //---------------------------------------------------------------------*/
 
-define(["require", "exports"], function (require, exports) {
+define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/dagre", "Scripts/Cytoscape/cytoscape-dagre"], function (require, exports, cytoscape, dagre, cydagre) {
     var StateModelGraph = (function() {
 
         var zoomStepSize = 0.1;
@@ -23,6 +23,7 @@ define(["require", "exports"], function (require, exports) {
             this.cy = null;
             this.currentWitType = "";
             this.cytoscape = cytoscape;
+            cydagre(cytoscape, dagre);
         }
 
         StateModelGraph.prototype.create = function(witTypeName, callback, callbackData) {

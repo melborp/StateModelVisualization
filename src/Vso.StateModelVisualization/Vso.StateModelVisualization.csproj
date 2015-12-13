@@ -83,6 +83,7 @@
     <Content Include="License.txt" />
     <Content Include="scripts\app\StateModelVisualization.js" />
     <Content Include="scripts\app\MainMenu.js" />
+    <Content Include="scripts\Cytoscape\cytoscape-dagre.js" />
     <Content Include="scripts\Cytoscape\cytoscape.js" />
     <Content Include="scripts\Cytoscape\cytoscape.min.js" />
     <Content Include="scripts\Cytoscape\dagre.js" />

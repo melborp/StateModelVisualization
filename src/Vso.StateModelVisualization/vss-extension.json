@@ -1,11 +1,11 @@
 ﻿{
   "manifestVersion": 1,
-  "id": "StateModelVisualization",
-  "version": "1.1.0",
+  "id": "StateModelVisualization-dev",
+  "version": "1.2.0",
   "name": "State Model Visualization",
   "description": "Add the ability to view the state model for a selected work item type.",
   "publisher": "taavi-koosaar",
-  "public": true,
+  "public": false,
   "scopes": [ "vso.work" ],
   "icons": {
     "default": "images/StateModelShortIcon.png"
