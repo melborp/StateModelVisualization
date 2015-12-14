@@ -38,8 +38,8 @@
                   var extensionContext = VSS.getExtensionContext();
                   // Navigate to the new View Assoicated Work Items hub.  fabrikam.build is the namespace of the app and build.items is the id of the hub.
 
-                  var widthPercentage = 80;
-                  var heightPercentage =  75;
+                  var widthPercentage = 75;
+                  var heightPercentage = 85;
 
                   var newWidth = parseInt((window.screen.width / 100 * widthPercentage).toString());
                   var newHeight = parseInt((window.screen.height / 100 * heightPercentage).toString());
@@ -47,7 +47,7 @@
                   var opts = {
                       width: newWidth,
                       height: newHeight,
-                      title: "Work Item Type State Diagram",
+                      title: "Work Item State Diagram",
                       buttons: null
                   };
                   var contributionConfig = 
