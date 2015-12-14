@@ -20,6 +20,11 @@ Export your chart visualization for offline viewing or printing.
 	1. Click on `Zoom In`, `Zoom Out`, `Zoom to original size` or `Fit To icons` on the toolbar to re-size.
 - **Export**
 	1. Export the visualization in any browser.
+- **State Diagram from Work Item** (NEW)
+	1. Open any work item
+		- If you are using the classic WI item form, select `State Diagram` on the toolbar.
+		- Otherwise click on `...` and select `State Diagram`.
+		- State Diagram Visualization dialog will open up for the selected work item type.
 
 ## Known issues ##
 

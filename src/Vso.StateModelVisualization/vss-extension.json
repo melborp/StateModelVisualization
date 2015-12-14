@@ -1,11 +1,11 @@
 ﻿{
   "manifestVersion": 1,
-  "id": "StateModelVisualization-dev",
+  "id": "StateModelVisualization",
   "version": "1.2.0",
   "name": "State Model Visualization",
   "description": "Add the ability to view the state model for a selected work item type.",
   "publisher": "taavi-koosaar",
-  "public": false,
+  "public": true,
   "scopes": [ "vso.work" ],
   "icons": {
     "default": "images/StateModelShortIcon.png"
@@ -23,6 +23,9 @@
     },
     "support": {
       "uri": "https://github.com/melborp/StateModelVisualization"
+    },
+    "repository": {
+      "uri": "https://github.com/melborp/StateModelVisualization/"
     },
     "issues": {
       "uri": "https://github.com/melborp/StateModelVisualization/issues"
@@ -62,9 +65,9 @@
         "ms.vss-work-web.work-item-toolbar-menu"
       ],
       "properties": {
-        "text": "States",
+        "text": "State Diagram",
         "title": "Show state diagram",
-        "toolbarText": "States",
+        "toolbarText": "State Diagram",
         "icon": "images/StateModelShortIcon-16x16.png",
         "group": "actions",
         "uri": "StateDiagramWitButton.html",
