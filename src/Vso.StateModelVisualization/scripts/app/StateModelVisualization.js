@@ -52,7 +52,6 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
 
             if (configuration) {
                 witClient.getWorkItem(configuration.workItemId, ["System.Id", "System.Title", "System.WorkItemType"]).then(function (wit) {
-                    $('.js-treeview').hide();
                     var witTypeName = wit.fields["System.WorkItemType"];
                     witClient.getWorkItemType(context.project.name, witTypeName).then(function (witType) {
                         allWits = new Array();
@@ -64,7 +63,6 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
             } else {
                 witClient.getWorkItemTypes(context.project.name).then(function(wits) {
                     witClient.getWorkItemTypeCategory(context.project.name).then(function(categories) {
-                        $('.js-treeview').show();
                         allWits = wits;
                         allCategories = categories;
 

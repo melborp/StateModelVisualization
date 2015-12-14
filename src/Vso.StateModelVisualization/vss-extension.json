@@ -51,7 +51,7 @@
       "type": "ms.vss-web.control",
       "targets": [ ".controls" ],
       "properties": {
-        "uri": "app.html"
+        "uri": "StateDiagramDialog.html"
       }
     },
     {
@@ -103,6 +103,10 @@
     },
     {
       "path": "StateDiagramWitButton.html",
+      "addressable": true
+    },
+    {
+      "path": "StateDiagramDialog.html",
       "addressable": true
     },
     {

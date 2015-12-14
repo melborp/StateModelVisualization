@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="StateDiagramDialog.html" />
     <Content Include="images\Screen1-small.png" />
     <Content Include="images\Screen2-small.png" />
     <Content Include="images\StateModelShortIcon-16x16.png" />
