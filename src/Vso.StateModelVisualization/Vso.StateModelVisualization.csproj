@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sdk\scripts\VSS.SDK.min.js" />
     <Content Include="StateDiagramDialog.html" />
     <Content Include="images\Screen1-small.png" />
     <Content Include="images\Screen2-small.png" />
