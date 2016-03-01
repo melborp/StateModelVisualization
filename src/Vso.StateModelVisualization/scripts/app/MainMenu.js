@@ -19,8 +19,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 
 define(["require", "exports", "VSS/Utils/Core",
-    "VSS/Controls", "VSS/Controls/Menus", "VSS/Controls/Common", "Scripts/App/StateModelGraph"],
-    function (require, exports, Core, Controls, MenuControls, CommonControls, StateModelGraph) {
+    "VSS/Controls", "VSS/Controls/Menus", "Scripts/App/StateModelGraph"],
+    function (require, exports, Core, Controls, MenuControls, StateModelGraph) {
 
     var ItemsView = (function (_super) {
         __extends(ItemsView, _super);

@@ -12,9 +12,9 @@
  //  </summary>
 //---------------------------------------------------------------------*/
 
-define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Controls/Menus", "VSS/Controls/Common", "VSS/Service", "TFS/WorkItemTracking/RestClient",
+define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Controls/Menus", "VSS/Service", "TFS/WorkItemTracking/RestClient",
         "Scripts/App/MainMenu", "Scripts/App/StateModelGraph"],
-    function (require, exports, Controls, TreeView, Menus, ControlsCommon, VssService, TfsWitRest, MainMenu, StateModelGraph) {
+    function (require, exports, Controls, TreeView, Menus, VssService, TfsWitRest, MainMenu, StateModelGraph) {
     var StateModelVisualization = (function() {
 
         var treeView;
