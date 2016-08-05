@@ -1,7 +1,7 @@
 ﻿{
   "manifestVersion": 1,
   "id": "StateModelVisualization",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "name": "State Model Visualization",
   "description": "Add the ability to view the state model for a selected work item type.",
   "publisher": "taavi-koosaar",
@@ -10,6 +10,9 @@
   "icons": {
     "default": "images/StateModelShortIcon.png"
   },
+  "categories": [
+    "Plan and track"
+  ],
   "tags": [
     "work item types",
     "visualize visualization"
@@ -43,7 +46,7 @@
       "properties": {
         "name": "State Visualizer",
         "order": 99,
-        "uri": "app.html"
+        "uri": "App.html"
       }
     },
     {
@@ -98,7 +101,7 @@
       "addressable": true
     },
     {
-      "path": "app.html",
+      "path": "App.html",
       "addressable": true
     },
     {
@@ -114,9 +117,9 @@
       "addressable": true
     }
   ],
-    "targets": [
-        {
-            "id": "Microsoft.VisualStudio.Services"
-        }
-    ]
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ]
 }

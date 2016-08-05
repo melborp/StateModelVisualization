@@ -57,14 +57,11 @@
     });
     // Wait for the SDK to be initialized
     VSS.ready(function () {
-        VSS.require(["Scripts/App/StateModelVisualization"], function (app) {
+        VSS.require(["scripts/app/StateModelVisualization"], function (app) {
             app.smv.start();
             VSS.notifyLoadSucceeded();
         });
     });
 </script>
-
-
-    
 </body>
 </html>

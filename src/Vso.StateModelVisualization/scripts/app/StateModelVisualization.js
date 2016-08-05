@@ -1,9 +1,9 @@
 ﻿/*---------------------------------------------------------------------
 // <copyright file="StateModelVisualization.js">
 //    This code is licensed under the MIT License.
-//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF 
-//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
-//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
  // <summary>
@@ -13,7 +13,7 @@
 //---------------------------------------------------------------------*/
 
 define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Controls/Menus", "VSS/Service", "TFS/WorkItemTracking/RestClient",
-        "Scripts/App/MainMenu", "Scripts/App/StateModelGraph"],
+        "scripts/app/MainMenu", "scripts/app/StateModelGraph"],
     function (require, exports, Controls, TreeView, Menus, VssService, TfsWitRest, MainMenu, StateModelGraph) {
     var StateModelVisualization = (function() {
 
@@ -33,7 +33,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
             mainMenu = Controls.Enhancement.enhance(MainMenu.ItemsView, $(".hub-view"), {});
             graph = StateModelGraph.graph;
 
-            // Get a WIT client to make REST calls to VSTS 
+            // Get a WIT client to make REST calls to VSTS
             var witClient = VssService.getCollectionClient(TfsWitRest.WorkItemTrackingHttpClient);
 
             var configuration = VSS.getConfiguration().action;

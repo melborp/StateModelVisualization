@@ -82,15 +82,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\app.css" />
-    <Content Include="app.html" />
+    <Content Include="App.html" />
     <Content Include="License.txt" />
     <Content Include="scripts\app\StateModelVisualization.js" />
     <Content Include="scripts\app\MainMenu.js" />
-    <Content Include="scripts\Cytoscape\cytoscape-dagre.js" />
-    <Content Include="scripts\Cytoscape\cytoscape.js" />
-    <Content Include="scripts\Cytoscape\cytoscape.min.js" />
-    <Content Include="scripts\Cytoscape\dagre.js" />
-    <Content Include="scripts\Cytoscape\LGPL-LICENSE.txt" />
+    <Content Include="scripts\cytoscape\cytoscape-dagre.js" />
+    <Content Include="scripts\cytoscape\cytoscape.js" />
+    <Content Include="scripts\cytoscape\cytoscape.min.js" />
+    <Content Include="scripts\cytoscape\dagre.js" />
+    <Content Include="scripts\cytoscape\LGPL-LICENSE.txt" />
     <Content Include="scripts\app\StateModelGraph.js" />
     <Content Include="sdk\scripts\VSS.SDK.js" />
     <Content Include="ThirdPartyNotice.txt" />

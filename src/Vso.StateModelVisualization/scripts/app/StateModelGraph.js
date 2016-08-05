@@ -1,9 +1,9 @@
 ﻿/*---------------------------------------------------------------------
 // <copyright file="StateModelGraph.js">
 //    This code is licensed under the MIT License.
-//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF 
-//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
-//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
  // <summary>
@@ -12,7 +12,7 @@
  //  </summary>
 //---------------------------------------------------------------------*/
 
-define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/dagre", "Scripts/Cytoscape/cytoscape-dagre"], function (require, exports, cytoscape, dagre, cydagre) {
+define(["require", "exports", "scripts/cytoscape/cytoscape", "scripts/cytoscape/dagre", "scripts/cytoscape/cytoscape-dagre"], function (require, exports, cytoscape, dagre, cydagre) {
     var StateModelGraph = (function() {
 
         var zoomStepSize = 0.1;
@@ -40,7 +40,7 @@ define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/
                         'color': 'black',
                         'width': '75px',
                         'height': '75px',
-                        'background-color': 'rgba(254,199,0,1)',    
+                        'background-color': 'rgba(254,199,0,1)',
                         'border-color': 'black',
                         'border-width': '0.25px',
                         'font-size': '12px',
@@ -160,7 +160,7 @@ define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/
                 var rank1Elements = new Array();
                 var rank2Elements = new Array();
                 var rank3Elements = new Array();
-            
+
                 var rankedArray = new Array();
 
                 for (state in selectedWit.transitions) {
@@ -242,7 +242,7 @@ define(["require", "exports", "Scripts/Cytoscape/cytoscape", "Scripts/Cytoscape/
                         stop: function () { self.zoomTo100(); }
                     });
         }
-        
+
         return StateModelGraph;
     })();
     exports.graph = new StateModelGraph($("#cy"), cytoscape);

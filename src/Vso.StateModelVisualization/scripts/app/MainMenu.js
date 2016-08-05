@@ -1,9 +1,9 @@
 ﻿/*---------------------------------------------------------------------
 // <copyright file="MainMenu.js">
 //    This code is licensed under the MIT License.
-//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF 
-//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED 
-//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+//    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+//    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+//    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
 //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
 // </copyright>
 // <summary>
@@ -19,7 +19,7 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 
 define(["require", "exports", "VSS/Utils/Core",
-    "VSS/Controls", "VSS/Controls/Menus", "Scripts/App/StateModelGraph"],
+    "VSS/Controls", "VSS/Controls/Menus", "scripts/app/StateModelGraph"],
     function (require, exports, Core, Controls, MenuControls, StateModelGraph) {
 
     var ItemsView = (function (_super) {
@@ -30,10 +30,10 @@ define(["require", "exports", "VSS/Utils/Core",
             this._menu = null;
             this._graph = StateModelGraph.graph;
         }
-        
+
 
         /*
-         *   Initialize will be called when this control is created.  This will setup the UI, 
+         *   Initialize will be called when this control is created.  This will setup the UI,
          *   attach to events, etc.
          */
         ItemsView.prototype.initialize = function () {
@@ -135,7 +135,7 @@ define(["require", "exports", "VSS/Utils/Core",
             var d = new Date();
             var png = this._graph.exportImage();
             var newImage = $("<img />").attr("src", png);
-            var imageDiv = $("<div />"); 
+            var imageDiv = $("<div />");
             imageDiv.append(newImage);
             var newWindow = window.open();
             var newDocument = newWindow.document;
@@ -146,7 +146,7 @@ define(["require", "exports", "VSS/Utils/Core",
             newDocument.write("</body></html>");
             newDocument.close();
         };
-        
+
         /*
          *  Enables the toolbar menu items - to be called after the work item diagram is set initially
          */
