@@ -58,6 +58,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="sdk\scripts\VSS.SDK.js" />
     <Content Include="sdk\scripts\VSS.SDK.min.js" />
     <Content Include="StateDiagramDialog.html" />
     <Content Include="images\Screen1-small.png" />
@@ -65,6 +66,7 @@
     <Content Include="images\StateModelShortIcon-16x16.png" />
     <Content Include="images\WVizDemo.png" />
     <Content Include="overview.md" />
+    <Content Include="package.json" />
     <None Include="vss-extension.json" />
     <Content Include="images\FitTo.png" />
     <Content Include="images\StateModelShortIcon.png" />
@@ -92,7 +94,6 @@
     <Content Include="scripts\cytoscape\dagre.js" />
     <Content Include="scripts\cytoscape\LGPL-LICENSE.txt" />
     <Content Include="scripts\app\StateModelGraph.js" />
-    <Content Include="sdk\scripts\VSS.SDK.js" />
     <Content Include="ThirdPartyNotice.txt" />
     <Content Include="StateDiagramWitButton.html" />
     <Content Include="Web.config" />
