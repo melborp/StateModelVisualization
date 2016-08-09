@@ -81,6 +81,7 @@
     <Content Include="images\Refresh.png" />
     <Content Include="images\ZoomZoomIn.png" />
     <Content Include="images\ZoomZoomOut.png" />
+    <Content Include="vss-extension.internal.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
