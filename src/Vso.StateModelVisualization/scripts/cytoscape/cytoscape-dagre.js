@@ -1,4 +1,4 @@
-;(function(){ 'use strict';
+(function(){ 'use strict';
 
   // registers the extension on a cytoscape lib ref
   var register = function( cytoscape, dagre ){
@@ -180,7 +180,7 @@
   }
 
   if( typeof define !== 'undefined' && define.amd ){ // expose as an amd/requirejs module
-      define("Scripts/Cytoscape/cytoscape-dagre", function () {
+      define("scripts/cytoscape/cytoscape-dagre", function () {
       return register;
     });
   }
