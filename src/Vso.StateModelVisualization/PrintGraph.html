@@ -1,0 +1,45 @@
+﻿<!--
+ //---------------------------------------------------------------------
+ // <copyright file="PrintGraph.html">
+ //    This code is licensed under the MIT License.
+ //    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+ //    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ //    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+ //    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ // </copyright>
+ // <summary>
+ //   Part of the State Model Visualization extension by the
+ //     ALM Rangers.  This file is used to show modal dialog to print the current graph.
+ //  </summary>
+ //---------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Export State Model Visualization</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <script src="scripts/app/AppInsightPageViewsTelemetry.js"></script>
+    <script src="scripts/lib/VSS.SDK.js"></script>
+</head>
+<body>
+    <div id="message"></div>
+    <div id="loader">
+        <div id="printTitle" style='font-family: Segoe UI Light; font-size: 18px; font-weight: 100; height: 24px'></div>
+        <div id="printDateTime" style='font-family: Segoe UI Light; font-size: 12px; font-weight: 100; padding-bottom: 5px'></div>
+        <div><img id="graphImage" /></div>
+    </div>
+    <script>
+    VSS.init({
+        explicitNotifyLoaded: true
+    });
+    VSS.require(["scripts/app/PrintGraph"], function(app) {
+        VSS.register("state-model-visualization-print-graph-dialog", function (context) {
+            return new app.PrintGraph(context);
+        });
+        VSS.notifyLoadSucceeded();
+    });
+    </script>
+</body>
+</html>
