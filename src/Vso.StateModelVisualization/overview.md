@@ -18,13 +18,14 @@ Export your chart visualization for offline viewing or printing.
 	1. Navigate to a **State Visualizer** hub.
 	1. Use the left tree view to select work item type and the states and transitions are visualized on the right side.
 	1. Click on `Zoom In`, `Zoom Out`, `Zoom to original size` or `Fit To icons` on the toolbar to re-size.
-- **Export**
-	1. Export the visualization in any browser.
-- **State Diagram from Work Item** (NEW)
+- **State Diagram from Work Item**
 	1. Open any work item
 		- If you are using the classic WI item form, select `State Diagram` on the toolbar.
 		- Otherwise click on `...` and select `State Diagram`.
 		- State Diagram Visualization dialog will open up for the selected work item type.
+- **Export**
+	1. Export the visualization in any browser.
+
 
 ## Known issues ##
 
@@ -37,3 +38,16 @@ The source to this extension is available on GitHub: [StateModelVisualization](h
 To learn more about developing an extension for Visual Studio Team Services, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
 
 [Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).
+
+## Release History ##
+
+### v1.3 ###
+
+It is recommended to have Team Foundation Server 2015 Update 3 when running on-premis!
+
+- **Bug fixes**
+
+	1. Fixed issue with exporting visualization on TFS on-premis (#12)
+	1. Fixed issue where Fit To Screen didnt quite fit (#11)
+    1. Moved extension to Plan and Track category, added application insight, upgraded VSS SDK (#14, #10, #8)
+    1. Fixed script paths to be same everywhere (case sensitive in CDN) (#7)

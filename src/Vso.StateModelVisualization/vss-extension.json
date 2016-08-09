@@ -1,7 +1,7 @@
 ﻿{
   "manifestVersion": 1,
   "id": "StateModelVisualization",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "name": "State Model Visualization",
   "description": "Add the ability to view the state model for a selected work item type.",
   "publisher": "taavi-koosaar",
