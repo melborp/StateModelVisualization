@@ -13,8 +13,8 @@
 //---------------------------------------------------------------------*/
 
 define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Controls/Menus", "VSS/Service", "TFS/WorkItemTracking/RestClient",
-        "scripts/app/MainMenu", "scripts/app/StateModelGraph"],
-    function (require, exports, Controls, TreeView, Menus, VssService, TfsWitRest, MainMenu, StateModelGraph) {
+        "scripts/app/MainMenu", "scripts/app/StateModelGraph", "scripts/app/TelemetryClient"],
+    function (require, exports, Controls, TreeView, Menus, VssService, TfsWitRest, MainMenu, StateModelGraph, TelemetryClient) {
     var StateModelVisualization = (function() {
 
         var treeView;
@@ -51,6 +51,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
             }
 
             if (configuration) {
+                TelemetryClient.getClient().trackEvent("Visualize.FromWorkItemForm");
                 witClient.getWorkItem(configuration.workItemId, ["System.Id", "System.Title", "System.WorkItemType"]).then(function (wit) {
                     var witTypeName = wit.fields["System.WorkItemType"];
                     witClient.getWorkItemType(context.project.name, witTypeName).then(function (witType) {
@@ -61,6 +62,7 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
                     });
                 });
             } else {
+                TelemetryClient.getClient().trackEvent("Visualize.FromStateVisualizer");
                 witClient.getWorkItemTypes(context.project.name).then(function(wits) {
                     witClient.getWorkItemTypeCategory(context.project.name).then(function(categories) {
                         allWits = wits;
@@ -122,7 +124,8 @@ define(["require", "exports", "VSS/Controls", "VSS/Controls/TreeView", "VSS/Cont
 
 
                         // Attach selectionchanged event using a DOM element containing treeview
-                        treeContainer.bind("selectionchanged", function(e, args) {
+                        treeContainer.bind("selectionchanged", function (e, args) {
+                            TelemetryClient.getClient().trackEvent("Visualization.SelectedWorkItemType");
                             treeView.TreeNode = args.selectedNode;
                             var selectedNode = args.selectedNode;
                             if (selectedNode && selectedNode.text !== "Work Items" && selectedNode.text !== "Hidden Work Items") {

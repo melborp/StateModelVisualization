@@ -58,6 +58,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PrintGraph.html" />
+    <Content Include="scripts\app\AppInsightPageViewsTelemetry.js" />
+    <Content Include="scripts\app\PrintGraph.js" />
+    <Content Include="scripts\app\TelemetryClient.js" />
+    <Content Include="scripts\lib\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\lib\ai.0.22.9-build00167.min.js" />
     <Content Include="sdk\scripts\VSS.SDK.js" />
     <Content Include="sdk\scripts\VSS.SDK.min.js" />
     <Content Include="StateDiagramDialog.html" />

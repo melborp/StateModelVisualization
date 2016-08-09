@@ -19,8 +19,8 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 
 define(["require", "exports", "VSS/Utils/Core",
-    "VSS/Controls", "VSS/Controls/Menus", "scripts/app/StateModelGraph"],
-    function (require, exports, Core, Controls, MenuControls, StateModelGraph) {
+    "VSS/Controls", "VSS/Controls/Menus", "scripts/app/StateModelGraph", "scripts/app/TelemetryClient"],
+    function (require, exports, Core, Controls, MenuControls, StateModelGraph, TelemetryClient) {
 
     var ItemsView = (function (_super) {
         __extends(ItemsView, _super);
@@ -71,6 +71,7 @@ define(["require", "exports", "VSS/Utils/Core",
          *  Fit the graph to the current window size
          */
         ItemsView.prototype._fitTo = function () {
+            TelemetryClient.getClient().trackEvent("Menu.FitTo");
             if (!$("#fit-to").hasClass("disabled")) {
                 this._graph.fitTo();
             }
@@ -80,6 +81,7 @@ define(["require", "exports", "VSS/Utils/Core",
          *  Zoom the diagram in one unit
          */
         ItemsView.prototype._zoomIn = function () {
+            TelemetryClient.getClient().trackEvent("Menu.ZoomIn");
             if (!$("#zoom-in").hasClass("disabled")) {
                 this._graph.zoomIn();
             }
@@ -89,6 +91,7 @@ define(["require", "exports", "VSS/Utils/Core",
          *  Zoom the diagram out one unit
          */
         ItemsView.prototype._zoomOut = function () {
+            TelemetryClient.getClient().trackEvent("Menu.ZoomOut");
             if (!$("#zoom-out").hasClass("disabled")) {
                 this._graph.zoomOut();
             }
@@ -98,6 +101,7 @@ define(["require", "exports", "VSS/Utils/Core",
          *  Set the diagram to 100%
          */
         ItemsView.prototype._zoom100 = function () {
+            TelemetryClient.getClient().trackEvent("Menu.ZoomTo100");
             if (!$("#zoom-100").hasClass("disabled")) {
                 this._graph.zoomTo100();
             }
@@ -132,6 +136,7 @@ define(["require", "exports", "VSS/Utils/Core",
         };
 
         ItemsView.prototype._exportGraph = function () {
+            TelemetryClient.getClient().trackEvent("Menu.ExportGraph");
             var d = new Date();
             var png = this._graph.exportImage();
             var newImage = $("<img />").attr("src", png);

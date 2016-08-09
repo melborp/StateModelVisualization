@@ -12,7 +12,7 @@
  //  </summary>
 //---------------------------------------------------------------------*/
 
-define(["require", "exports", "scripts/cytoscape/cytoscape", "scripts/cytoscape/dagre", "scripts/cytoscape/cytoscape-dagre"], function (require, exports, cytoscape, dagre, cydagre) {
+define(["require", "exports", "scripts/cytoscape/cytoscape", "scripts/cytoscape/dagre", "scripts/cytoscape/cytoscape-dagre", "scripts/app/TelemetryClient"], function (require, exports, cytoscape, dagre, cydagre, TelemetryClient) {
     var StateModelGraph = (function() {
 
         var zoomStepSize = 0.1;
