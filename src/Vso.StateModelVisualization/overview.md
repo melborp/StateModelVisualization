@@ -27,23 +27,18 @@ Export your chart visualization for offline viewing or printing.
 	1. Export the visualization in any browser.
 
 
-## Known issues ##
+## Planned features ##
 
-- Not showing reasons for transitions. Api doesnt expose it yet.
+- Showing reasons for transitions.
 
-## Learn more ##
 
-The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization). Feel free to take and modify.
+## Feedback ##
 
-To learn more about developing an extension for Visual Studio Team Services, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
-
-[Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).
+If you like this extension, please leave a review and feedback. If you'd have suggestions or an issue, please [file an issue to give me a chance to fix it](https://github.com/melborp/StateModelVisualization/issues).
 
 ## Release History ##
 
 ### v1.3 ###
-
-It is recommended to have Team Foundation Server 2015 Update 3 when running on-premis!
 
 - **Bug fixes**
 
@@ -51,3 +46,11 @@ It is recommended to have Team Foundation Server 2015 Update 3 when running on-p
 	1. Fixed issue where Fit To Screen didnt quite fit (#11)
     1. Moved extension to Plan and Track category, added application insight, upgraded VSS SDK (#14, #10, #8)
     1. Fixed script paths to be same everywhere (case sensitive in CDN) (#7)
+
+## Learn more ##
+
+The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization). 
+
+To learn more about developing an extension for Visual Studio Team Services, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
+
+[Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).
