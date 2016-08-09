@@ -137,19 +137,29 @@ define(["require", "exports", "VSS/Utils/Core",
 
         ItemsView.prototype._exportGraph = function () {
             TelemetryClient.getClient().trackEvent("Menu.ExportGraph");
-            var d = new Date();
             var png = this._graph.exportImage();
-            var newImage = $("<img />").attr("src", png);
-            var imageDiv = $("<div />");
-            imageDiv.append(newImage);
-            var newWindow = window.open();
-            var newDocument = newWindow.document;
-            newDocument.write("<html><head><title>State Model Visualization Output</title></head><body>");
-            newDocument.write("<div style='font-family: Segoe UI Light; font-size: 18px; font-weight: 100; height: 24px'>Visualization of " + this._graph.currentWitType + "</div>");
-            newDocument.write("<div style='font-family: Segoe UI Light; font-size: 12px; font-weight: 100; padding-bottom: 5px'>Generated " + d.toLocaleDateString() + "</div>");
-            newDocument.write($("<div />").append(imageDiv).html());
-            newDocument.write("</body></html>");
-            newDocument.close();
+            var self = this;
+
+            VSS.getService(VSS.ServiceIds.Dialog).then(function (dlg) {
+                var printGraphDialog;
+
+                //TODO: later make dialog same size as window and offer full screen option
+                var opts = {
+                    width: window.screen.width,
+                    height: window.screen.height,
+                    title: "Export State Diagram Visualization",
+                    buttons: null
+                };
+
+                dlg.openDialog(VSS.getExtensionContext().publisherId + "." + VSS.getExtensionContext().extensionId + ".state-diagram-visualization-print-graph-dialog", opts).then(function (dialog) {
+                    dialog.getContributionInstance("state-diagram-visualization-print-graph-dialog").then(function (ci) {
+                        printGraphDialog = ci;
+                        printGraphDialog.start(png, self._graph.currentWitType);
+                    }, function (err) {
+                        alert(err.message);
+                    });
+                });
+            });
         };
 
         /*

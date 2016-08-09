@@ -73,6 +73,14 @@
         "uri": "StateDiagramWitButton.html",
         "registeredObjectId": "state-diagram-work-item-button"
       }
+    },
+    {
+      "id": "state-diagram-visualization-print-graph-dialog",
+      "type": "ms.vss-web.control",
+      "targets": [ ".controls" ],
+      "properties": {
+        "uri": "PrintGraph.html"
+      }
     }
   ],
   "content": {

@@ -27,12 +27,12 @@ define(
             var self = this;
             self.context = context;
         }
-        PrintGraph.prototype.start = function (img, witType, witId) {
+        PrintGraph.prototype.start = function (img, witType) {
             var self = this;
 
             var d = new Date();
 
-            $("#printTitle").text("Visualization of " + witType + " " + witId);
+            $("#printTitle").text("Visualization of " + witType);
             $("#printDateTime").text("Generated " + d.toLocaleDateString());
             $("#graphImage").attr("src",img);
         };

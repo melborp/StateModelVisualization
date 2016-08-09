@@ -17,7 +17,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Export State Model Visualization</title>
+    <title>Export State Diagram Visualization</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/app.css" type="text/css" />
     <script src="scripts/app/AppInsightPageViewsTelemetry.js"></script>
@@ -35,7 +35,7 @@
         explicitNotifyLoaded: true
     });
     VSS.require(["scripts/app/PrintGraph"], function(app) {
-        VSS.register("state-model-visualization-print-graph-dialog", function (context) {
+        VSS.register("state-diagram-visualization-print-graph-dialog", function (context) {
             return new app.PrintGraph(context);
         });
         VSS.notifyLoadSucceeded();
