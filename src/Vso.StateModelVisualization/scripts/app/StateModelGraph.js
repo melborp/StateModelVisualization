@@ -106,7 +106,7 @@ define(["require", "exports", "scripts/cytoscape/cytoscape", "scripts/cytoscape/
         }
         StateModelGraph.prototype.exportImage = function () {
             var self = this;
-            var png64 = self.cy.png({ full: true, scale : 2});
+            var png64 = self.cy.png({ full: true, scale : 1});
             return png64;
         }
         StateModelGraph.prototype.resize = function () {

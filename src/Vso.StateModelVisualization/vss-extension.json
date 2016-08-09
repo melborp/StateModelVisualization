@@ -101,15 +101,15 @@
       "addressable": true
     },
     {
-      "path": "sdk",
-      "addressable": true
-    },
-    {
       "path": "css",
       "addressable": true
     },
     {
       "path": "App.html",
+      "addressable": true
+    },
+    {
+      "path": "PrintGraph.html",
       "addressable": true
     },
     {

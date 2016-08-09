@@ -64,8 +64,8 @@
     <Content Include="scripts\app\TelemetryClient.js" />
     <Content Include="scripts\lib\ai.0.22.9-build00167.js" />
     <Content Include="scripts\lib\ai.0.22.9-build00167.min.js" />
-    <Content Include="sdk\scripts\VSS.SDK.js" />
-    <Content Include="sdk\scripts\VSS.SDK.min.js" />
+    <Content Include="scripts\lib\VSS.SDK.js" />
+    <Content Include="scripts\lib\VSS.SDK.min.js" />
     <Content Include="StateDiagramDialog.html" />
     <Content Include="images\Screen1-small.png" />
     <Content Include="images\Screen2-small.png" />
