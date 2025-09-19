@@ -1,8 +1,0 @@
-{
-	"version": "1.0.0",
-	"name": "VstsStateModelVisualization",
-	"private": true,
-  "devDependencies": {
-    "vss-web-extension-sdk": "~1.102.0"
-  }
-}

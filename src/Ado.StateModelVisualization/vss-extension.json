@@ -1,0 +1,126 @@
+{
+  "manifestVersion": 1,
+  "id": "StateModelVisualization",
+  "version": "2.0.100",
+  "name": "State Model Visualization",
+  "description": "Visualize work item type state transitions in interactive diagrams. View state models, transitions, and workflow for any work item type in your Azure DevOps project.",
+  "publisher": "taavi-koosaar",
+  "public": true,
+  "galleryFlags": [
+    "Preview"
+  ],
+  "scopes": [ 
+    "vso.work"
+  ],
+  "icons": {
+    "default": "dist/images/StateModelShortIcon.png"
+  },
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Azure Boards"
+  ],
+  "tags": [
+    "work item types",
+    "visualization",
+    "state model",
+    "workflow",
+    "transitions",
+    "planning"
+  ],
+  "screenshots": [
+    {
+      "path": "dist/images/Screen1-small.png"
+    },
+    {
+      "path": "dist/images/Screen2-small.png"
+    }
+  ],
+  "links": {
+    "home": {
+      "uri": "https://github.com/melborp/StateModelVisualization"
+    },
+    "support": {
+      "uri": "https://github.com/melborp/StateModelVisualization/issues"
+    },
+    "repository": {
+      "uri": "https://github.com/melborp/StateModelVisualization"
+    },
+    "issues": {
+      "uri": "https://github.com/melborp/StateModelVisualization/issues"
+    }
+  },
+  "branding": {
+    "color": "rgb(220, 235, 252)",
+    "theme": "light"
+  },
+    "content": {
+    "details": {
+      "path": "overview.md"
+    },
+    "license": {
+      "path": "License.txt"
+    }
+  },
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    },
+    {
+      "path": "ThirdPartyNotice.txt",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "state-model-visualization-hub",
+      "type": "ms.vss-web.hub",
+      "description": "Adds a 'State Model Visualization' hub to the Work hub group.",
+      "targets": [
+        "ms.vss-work-web.work-hub-group"
+      ],
+      "properties": {
+        "name": "State Visualizer",
+        "order": 99,
+        "uri": "dist/App.html"
+      }
+    },
+    {
+      "id": "work-item-state-diagram-dialog",
+      "type": "ms.vss-web.control",
+      "targets": [ ".controls" ],
+      "properties": {
+        "uri": "dist/StateDiagramDialog.html"
+      }
+    },
+    {
+      "id": "state-diagram-work-item-button",
+      "type": "ms.vss-web.action",
+      "description": "Work item States",
+      "targets": [
+        "ms.vss-work-web.work-item-toolbar-menu"
+      ],
+      "properties": {
+        "text": "State Diagram",
+        "title": "Show state diagram",
+        "toolbarText": "State Diagram",
+        "icon": "dist/images/StateModelShortIcon-16x16.png",
+        "group": "actions",
+        "uri": "dist/StateDiagramWitButton.html",
+        "registeredObjectId": "state-diagram-work-item-button"
+      }
+    },
+    {
+      "id": "state-diagram-visualization-print-graph-dialog",
+      "type": "ms.vss-web.control",
+      "targets": [ ".controls" ],
+      "properties": {
+        "uri": "dist/PrintGraph.html"
+      }
+    }
+  ]
+}
