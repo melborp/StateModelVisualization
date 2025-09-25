@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "StateModelVisualization",
-  "version": "2.0.106",
+  "version": "2.0.112",
   "name": "State Model Visualization",
   "description": "Visualize work item type state transitions in interactive diagrams. View state models, transitions, and workflow for any work item type in your Azure DevOps project.",
   "publisher": "taavi-koosaar",
@@ -96,7 +96,8 @@
       "properties": {
         "name": "State Visualizer",
         "order": 99,
-        "uri": "dist/App.html"
+        "uri": "dist/App.html",
+        "icon": "dist/images/icons/StateModelIcon-mono-squares-16_strong.png"
       }
     },
     {
@@ -120,7 +121,7 @@
         "text": "State Diagram",
         "title": "Show state diagram",
         "toolbarText": "State Diagram",
-        "icon": "dist/images/StateModelShortIcon-16x16.png",
+        "icon": "dist/images/icons/StateModelIcon-mono-squares-16_strong.png",
         "group": "actions",
         "uri": "dist/StateDiagramWitButton.html",
         "registeredObjectId": "state-diagram-work-item-button"

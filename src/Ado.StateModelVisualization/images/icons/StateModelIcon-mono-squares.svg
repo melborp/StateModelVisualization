@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 160 160">
+  <defs>
+    <!-- Arrow markers (scaled down) -->
+    <marker id="arrowEndSmall" markerWidth="4" markerHeight="4" refX="2" refY="2" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L4,2 L0,4 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <g fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Nodes -->
+    <rect x="65" y="8"   width="30" height="30" />
+    <rect x="8"  y="104" width="30" height="30" />
+    <rect x="65" y="104" width="30" height="30" />
+    <rect x="122" y="104" width="30" height="30" />
+
+    <!-- Top to bottom arrows -->
+    <line x1="80" y1="40" x2="26"  y2="95" marker-end="url(#arrowEndSmall)" stroke-width="4"/>
+    <line x1="80" y1="40" x2="80"  y2="93" marker-end="url(#arrowEndSmall)" stroke-width="4"/>
+    <line x1="80" y1="40" x2="134" y2="95" marker-end="url(#arrowEndSmall)" stroke-width="4"/>
+
+    <!-- Bottom double-headed arrows -->
+    <line x1="41" y1="119" x2="56" y2="119" marker-end="url(#arrowEndSmall)"  stroke-width="4"/>
+    <line x1="98" y1="119" x2="113" y2="119" marker-end="url(#arrowEndSmall)"  stroke-width="4"/>
+  </g>
+</svg>
