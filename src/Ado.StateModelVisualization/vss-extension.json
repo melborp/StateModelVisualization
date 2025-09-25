@@ -33,11 +33,20 @@
   ],
   "screenshots": [
     {
-      "path": "dist/images/Screen1-small.png"
+      "path": "dist/images/StateModelVisualization-StateVisualizer-breadthfirst.png"
     },
     {
-      "path": "dist/images/Screen2-small.png"
-    }
+      "path": "dist/images/StateModelVisualization-StateVisualizer-concentric.png"
+    },
+        {
+      "path": "dist/images/StateModelVisualization-StateVisualizer-dagre-nodes-moved.png"
+    },
+        {
+      "path": "dist/images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst.png"
+    },
+        {
+      "path": "dist/images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst-print.png"
+    }    
   ],
   "links": {
     "home": {

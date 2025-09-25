@@ -9,6 +9,7 @@ Modern Azure DevOps extension to visualize work item type state transitions and 
 - **Interactive state diagrams** - Visualize work item state models with transitions
 - **Multiple layout algorithms** - Choose between breadthfirst, concentric, and dagre layouts
 - **Smart positioning** - Advanced node ranking system for optimal visual hierarchy
+- **Manual repositioning** - Drag nodes to customize layout before exporting or printing
 - **Export & print** - Save diagrams as PNG images or print via Azure DevOps dialog
 - **Work item integration** - Access state diagrams directly from work item toolbar
 - **Responsive design** - Clean, modern UI with Azure DevOps theming

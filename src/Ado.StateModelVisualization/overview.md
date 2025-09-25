@@ -1,56 +1,80 @@
-## Visualize work item type states and transitions##
+## Modern Azure DevOps State Diagram Visualization
 
-[![Demo](images/wvizdemo.png)](https://channel9.msdn.com/Series/Visual-Studio-ALM-Rangers-Demos/VS-Team-Services-State-Model-Visualization-Extension) Every work item type in Visual Studio Team Services has a states, transitions and reasons defined. With this extension you can visualize those states and transitions for regular and hidden work item types.
+**v2.0 Preview** - Completely modernized extension built with React, TypeScript, and Azure DevOps UI components.
 
-![Visualize](images/Screen1-small.png)
+Visualize work item type state transitions and workflows in interactive diagrams. Every work item type in Azure DevOps has states, transitions, and reasons defined. With this extension you can visualize those states and transitions for both regular and hidden work item types with advanced layout algorithms and modern UI.
 
-### Export for offline viewing ###
+![Visualize](images/StateModelVisualization-StateVisualizer-breadthfirst.png)
 
-Export your chart visualization for offline viewing or printing.
+## ✨ What's New in v2.0
 
-![Export](images/Screen2-small.png)
+- **🎨 Multiple Layout Algorithms** - Choose between breadthfirst, concentric, and dagre layouts for optimal visualization
+- **🧠 Smart Positioning** - Advanced node ranking system with intelligent initial state placement
+- **🎯 Modern UI** - Built with Azure DevOps UI components for consistent experience
+- **📤 Enhanced Export** - PNG export and print dialog with optimized formatting
+- **⚡ Real-time Layout Switching** - Switch between algorithms without reloading
+- **🔍 Improved Navigation** - Responsive design with better work item type organization
 
-## Quick steps to get started ##
+### Export and Print ###
 
-- **Visualize**
-	1. Navigate to your team project.
-	1. Select **WORK** hub group.
-	1. Navigate to a **State Visualizer** hub.
-	1. Use the left tree view to select work item type and the states and transitions are visualized on the right side.
-	1. Click on `Zoom In`, `Zoom Out`, `Zoom to original size` or `Fit To icons` on the toolbar to re-size.
-- **State Diagram from Work Item**
-	1. Open any work item
-		- If you are using the classic WI item form, select `State Diagram` on the toolbar.
-		- Otherwise click on `...` and select `State Diagram`.
-		- State Diagram Visualization dialog will open up for the selected work item type.
-- **Export**
-	1. Export the visualization in any browser.
+Export your state diagrams as PNG images or use the integrated print dialog for documentation. **Drag nodes to reposition them** for optimal layout before exporting or printing.
 
+![Export](images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst-print.png)
 
-## Planned features ##
+## 🚀 Quick Start
 
-- Showing reasons for transitions.
+### Main Hub Visualization
+1. Navigate to your Azure DevOps project
+2. Go to **Boards** > **State Visualizer** 
+3. Select a work item type from the tree view
+4. Choose your preferred layout algorithm (breadthfirst, concentric, or dagre)
+5. Use toolbar buttons to zoom, fit to screen, export, or print
 
+### From Work Item
+1. Open any work item
+2. Click **...** (more actions) > **State Diagram**
+3. View the state diagram in a full-screen dialog
 
-## Feedback ##
+## ⚠️ Preview Notice
 
-If you like this extension, please leave a review and feedback. If you'd have suggestions or an issue, please [file an issue to give me a chance to fix it](https://github.com/melborp/StateModelVisualization/issues).
+This v2.0 preview has been tested with **Azure DevOps Services** but **not with Azure DevOps Server**. 
 
-## Release History ##
+**Need help testing on Azure DevOps Server?** If you're using Azure DevOps Server, please try this extension and [report any issues on GitHub](https://github.com/melborp/StateModelVisualization/issues). Your feedback helps ensure compatibility across all Azure DevOps platforms.
 
-### v1.3 ###
+v1.3.8 will remain available where compatibility cant be maintained.
 
-- **Bug fixes**
+## 🎯 Upcoming Features
 
-	1. Fixed issue with exporting visualization on TFS on-premis (#12)
-	1. Fixed issue where Fit To Screen didnt quite fit (#11)
-    1. Moved extension to Plan and Track category, added application insight, upgraded VSS SDK (#14, #10, #8)
-    1. Fixed script paths to be same everywhere (case sensitive in CDN) (#7)
+Based on community feedback and Azure DevOps API capabilities, these enhancements are planned:
+
+- **🎨 State Colors** - Use official Azure DevOps state colors in diagrams
+- **🔲 Work Item Type Icons** - Display work item type icons and colors
+- **⚡ Transition Actions** - Show required actions and reasons for state transitions
+- **🔍 Smart Filtering** - Filter disabled work item types with opt-in toggle
+- **🎨 Enhanced Theming** - Complete Azure DevOps design system integration
+
+## 💬 Feedback & Support
+
+Love this extension? Please leave a review! Have suggestions or found an issue? 
+
+**[📝 Report Issues](https://github.com/melborp/StateModelVisualization/issues)** - Help improve the extension
+
+**[⭐ Leave a Review](https://marketplace.visualstudio.com/items?itemName=taavi-koosaar.StateModelVisualization&ssr=false#review-details)** - Share your experience
+
+## 📚 Version History
+
+### v2.0 Preview (Current) 
+- Complete rewrite with React + TypeScript
+- Multiple layout algorithms with smart recommendations
+- Advanced node ranking and positioning system
+- Modern Azure DevOps UI components
+- Enhanced export and print functionality
+
+### v1.3.8 (Legacy)
+- Final version of the original JavaScript implementation
+- Available on [releases/v1.3.8 branch](https://github.com/melborp/StateModelVisualization/tree/releases/v1.3.8)
+- ⚠️ No longer maintained
 
 ## Learn more ##
 
-The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization). 
-
-To learn more about developing an extension for Visual Studio Team Services, see the [overview of extensions](https://www.visualstudio.com/en-us/integrate/extensions/overview).
-
-[Third Party Notice](https://marketplace.visualstudio.com/_apis/public/gallery/publisher/taavi-koosaar/extension/StateModelVisualization/latest/assetbyname/ThirdPartyNotice.txt).
+The source to this extension is available on GitHub: [StateModelVisualization](https://github.com/melborp/StateModelVisualization).

@@ -70,10 +70,6 @@ module.exports = {
           to: 'images'
         },
         {
-          from: path.resolve(__dirname, 'css'),
-          to: 'css'
-        },
-        {
           from: path.resolve(__dirname, 'overview.md'),
           to: '../overview.md'
         },

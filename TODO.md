@@ -1,4 +1,4 @@
-# State Model Visualization Extension - TODO
+# State Model Visualization Extension - TODO v2
 
 ## Completed ✅
 1. **Export functionality** - PNG export and print dialog
@@ -38,13 +38,7 @@
 **Status**: Not Started
 
 ## Additional Tasks
-- Callout for Azure DevOps Server feedback - using latest versions of things, unsure
-- Callout for trying v2 in azure devops service
-- Link to State Visualization Extension v1.3.8 which wont get more updates
 - New demo video for the extension
-- Update overview.md 
-- Cleanup files that arent used by extension anymore e.g. images, css
-- Remove UpgradePlan.md
 
 ---
 
