@@ -1,0 +1,24 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Very simple design - just lines connecting dots -->
+  
+  <!-- Top node -->
+  <circle cx="8" cy="4" r="1.5" fill="#666666"/>
+  
+  <!-- Bottom nodes -->
+  <circle cx="4" cy="12" r="1.5" fill="#666666"/>
+  <circle cx="8" cy="12" r="1.5" fill="#666666"/>
+  <circle cx="13" cy="12" r="1.5" fill="#666666"/>
+  
+  <!-- Simple connecting lines without arrow heads -->
+  <!-- From top to left -->
+  <line x1="6.5" y1="6" x2="5" y2="10" stroke="#666666" stroke-width="1"/>
+  
+  <!-- From top to middle -->
+  <line x1="8" y1="6" x2="8" y2="10" stroke="#666666" stroke-width="1"/>
+  
+  <!-- From top to right -->
+  <line x1="9.5" y1="6" x2="12" y2="10" stroke="#666666" stroke-width="1"/>
+  
+  <!-- From middle to right -->
+  <line x1="10" y1="12" x2="11" y2="12" stroke="#666666" stroke-width="1"/>
+</svg>
