@@ -4,7 +4,7 @@
 
 Visualize work item type state transitions and workflows in interactive diagrams. Every work item type in Azure DevOps has states, transitions, and reasons defined. With this extension you can visualize those states and transitions for both regular and hidden work item types with advanced layout algorithms and modern UI.
 
-![Visualize](images/StateModelVisualization-StateVisualizer-breadthfirst.png)
+![Visualize](dist/images/StateModelVisualization-StateVisualizer-breadthfirst.png)
 
 ## ✨ What's New in v2.0
 
@@ -19,7 +19,7 @@ Visualize work item type state transitions and workflows in interactive diagrams
 
 Export your state diagrams as PNG images or use the integrated print dialog for documentation. **Drag nodes to reposition them** for optimal layout before exporting or printing.
 
-![Export](images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst-print.png)
+![Export](dist/images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst-print.png)
 
 ## 🚀 Quick Start
 

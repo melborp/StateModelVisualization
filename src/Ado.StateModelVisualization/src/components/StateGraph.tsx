@@ -192,8 +192,8 @@ const getLayoutConfig = (algorithm: LayoutAlgorithm, stateCount: number, nodeRan
           // Increase level width for better spacing between concentric rings
           return Math.max(2, Math.ceil(nodes.length / 2));
         },
-        minNodeSpacing: 60, // Increased minimum spacing between nodes
-        padding: 30, // Increased padding for more space
+        minNodeSpacing: 20, // Increased minimum spacing between nodes
+        padding: 20, // Increased padding for more space
         startAngle: Math.PI, // Start from left side (9 o'clock)
         sweep: Math.PI * 1.5, // Only use 3/4 of the circle
         clockwise: true,

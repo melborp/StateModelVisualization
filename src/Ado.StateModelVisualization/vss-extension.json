@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "StateModelVisualization",
-  "version": "2.0.100",
+  "version": "2.0.104",
   "name": "State Model Visualization",
   "description": "Visualize work item type state transitions in interactive diagrams. View state models, transitions, and workflow for any work item type in your Azure DevOps project.",
   "publisher": "taavi-koosaar",
@@ -9,7 +9,7 @@
   "galleryFlags": [
     "Preview"
   ],
-  "scopes": [ 
+  "scopes": [
     "vso.work"
   ],
   "icons": {
@@ -33,24 +33,21 @@
   ],
   "screenshots": [
     {
-      "path": "dist/images/StateModelVisualization-StateVisualizer-breadthfirst.png"
+      "path": "dist/images/StateModelVisualization-StateVisualizer-concentric-screen1.png"
     },
     {
-      "path": "dist/images/StateModelVisualization-StateVisualizer-concentric.png"
+      "path": "dist/images/StateModelVisualization-StateVisualizer-breadthfirst-screen2.png"
     },
-        {
-      "path": "dist/images/StateModelVisualization-StateVisualizer-dagre-nodes-moved.png"
-    },
-        {
-      "path": "dist/images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst.png"
-    },
-        {
-      "path": "dist/images/StateModelVisualization-WorkItem-StateDiagram-breadthfirst-print.png"
-    }    
+    {
+      "path": "dist/images/StateModelVisualization-print-screen3.png"
+    }
   ],
   "links": {
     "home": {
       "uri": "https://github.com/melborp/StateModelVisualization"
+    },
+    "getstarted": {
+      "uri": "https://github.com/melborp/StateModelVisualization/docs/getstarted.md"
     },
     "support": {
       "uri": "https://github.com/melborp/StateModelVisualization/issues"
@@ -62,11 +59,15 @@
       "uri": "https://github.com/melborp/StateModelVisualization/issues"
     }
   },
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/melborp/StateModelVisualization"
+  },
   "branding": {
     "color": "rgb(220, 235, 252)",
     "theme": "light"
   },
-    "content": {
+  "content": {
     "details": {
       "path": "overview.md"
     },
@@ -101,7 +102,9 @@
     {
       "id": "work-item-state-diagram-dialog",
       "type": "ms.vss-web.control",
-      "targets": [ ".controls" ],
+      "targets": [
+        ".controls"
+      ],
       "properties": {
         "uri": "dist/StateDiagramDialog.html"
       }
@@ -126,7 +129,9 @@
     {
       "id": "state-diagram-visualization-print-graph-dialog",
       "type": "ms.vss-web.control",
-      "targets": [ ".controls" ],
+      "targets": [
+        ".controls"
+      ],
       "properties": {
         "uri": "dist/PrintGraph.html"
       }

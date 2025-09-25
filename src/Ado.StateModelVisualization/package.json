@@ -9,7 +9,7 @@
     "build:dev": "npm run clean && webpack --mode development",
     "package": "tfx extension create --manifests vss-extension.json --rev-version --output-path out/",
     "devpack": "npm run build:dev && tfx extension create --manifests vss-extension.json --overrides-file vss-extension.dev.internal.json --rev-version --output-path out/",
-    "intpack": "npm run build:dev && tfx extension create --manifests vss-extension.json --overrides-file vss-extension.internal.json --rev-version --output-path out/"
+    "intpack": "npm run build && tfx extension create --manifests vss-extension.json --overrides-file vss-extension.internal.json --rev-version --output-path out/"
   },
   "dependencies": {
     "azure-devops-extension-api": "^4.259.0",
