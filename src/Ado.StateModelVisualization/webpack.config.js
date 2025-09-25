@@ -2,7 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports = {
+module.exports = (env, argv) => {
+  const isProduction = argv.mode === 'production';
+  
+  return {
   entry: {
     app: './src/App.tsx',
     stateDiagramDialog: './src/StateDiagramDialog.tsx',
@@ -84,7 +87,25 @@ module.exports = {
       ],
     }),
   ],
-  devtool: "inline-source-map",
+  // Tree shaking and optimization
+  mode: isProduction ? 'production' : 'development',
+  optimization: {
+    usedExports: true, // Enable tree shaking
+    sideEffects: false, // Mark all modules as side-effect free
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+  
+  // Source maps: inline for development, separate files for production
+  devtool: isProduction ? 'source-map' : 'inline-source-map',
+  
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
@@ -95,4 +116,5 @@ module.exports = {
     hot: true,
     allowedHosts: 'all'
   },
+  };
 };
