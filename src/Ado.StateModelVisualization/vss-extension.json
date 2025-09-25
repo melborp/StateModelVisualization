@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": "StateModelVisualization",
-  "version": "2.0.111",
+  "version": "2.0.112",
   "name": "State Model Visualization",
   "description": "Visualize work item type state transitions in interactive diagrams. View state models, transitions, and workflow for any work item type in your Azure DevOps project.",
   "publisher": "taavi-koosaar",
