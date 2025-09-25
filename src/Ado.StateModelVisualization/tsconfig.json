@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": ["DOM", "DOM.Iterable", "ES6"],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "strictNullChecks": true,
+    //"noUnusedLocals": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,    
+    "module": "ES2015",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "jsx": "react",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+  "esModuleInterop": true
+}

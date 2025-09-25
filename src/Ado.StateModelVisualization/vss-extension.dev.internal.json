@@ -1,0 +1,8 @@
+{
+  "id": "StateModelVisualization-Internal",
+  "name": "State Model Visualization (Internal)",
+  "version": "2.0.59",
+  "publisher": "taavi-koosaar",
+  "public": false,
+  "baseUri": "https://localhost:8888"
+}

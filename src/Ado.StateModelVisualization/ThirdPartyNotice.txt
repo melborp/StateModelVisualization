@@ -1,0 +1,36 @@
+﻿THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
+
+This extension incorporates material from the projects listed below. 
+The original copyright notice and licenses are provided for informational purposes only.
+
+----------------------
+
+React (https://github.com/facebook/react)
+Copyright (c) Facebook, Inc. and its affiliates.
+License: MIT License
+License URL: https://github.com/facebook/react/blob/main/LICENSE
+
+----------------------
+
+Cytoscape.js (https://github.com/cytoscape/cytoscape.js)
+Copyright (c) 2016-2024, The Cytoscape Consortium.
+License: MIT License  
+License URL: https://github.com/cytoscape/cytoscape.js/blob/master/LICENSE
+
+----------------------
+
+Dagre (https://github.com/dagrejs/dagre)
+Copyright (c) 2012-2014 Chris Pettitt
+License: MIT License
+License URL: https://github.com/dagrejs/dagre/blob/master/LICENSE
+
+----------------------
+
+Cytoscape-Dagre (https://github.com/cytoscape/cytoscape.js-dagre)
+Copyright (c) 2016-2022, The Cytoscape Consortium.
+License: MIT License
+License URL: https://github.com/cytoscape/cytoscape.js-dagre/blob/master/LICENSE
+
+----------------------
+
+
